@@ -40,7 +40,7 @@ export function CtaSection() {
           width={900}
           height={698}
           priority
-          className="-mt-14 mt-0 lg:-mb-40"
+          className="mt-0 lg:-mb-40"
         />
       </div>
     </section>
