@@ -15,11 +15,11 @@ export function Header2() {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
-      className="container flex items-center justify-between gap-10 py-4 md:mt-4 mt-5"
+      className="container mt-5 flex items-center justify-between gap-10 py-4 md:mt-4"
     >
-      <Logo className="max-w-[12rem] sm:max-w-xs" />
+      <Logo className="max-w-48 sm:max-w-xs" />
       <div className="flex items-center gap-10">
-        <nav className="hidden items-center gap-10 md:flex justify-end">
+        <nav className="hidden items-center justify-end gap-10 md:flex">
           <NavItem href="/" label="About" />
           <NavItem href="/tooling" label="Business Tools" />
           <NavItem href="/careers" label="Careers" />
@@ -33,15 +33,14 @@ export function Header2() {
         </div>
       </div>
       <MobileNavbar>
-        <div className="rounded-b-lg bg-background py-4 container text-foreground shadow-xl">
+        <div className="container rounded-b-lg bg-background py-4 text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
-            <MobileNavItem href="/about" label="About" />
-            <MobileNavItem href="/docs" label="Docs" />
-            <MobileNavItem href="/blog" label="Blog" />
-            <MobileNavItem href="/pricing" label="Pricing" />
+            <MobileNavItem href="/" label="About" />
+            <MobileNavItem href="/tooling" label="Venture Tools" />
+            <MobileNavItem href="/careers" label="Careers" />
             <Button size="lg" asChild className="mt-2 w-full">
               <Link href="#" className="cursor-pointer">
-                Get Started
+                Contact Us
               </Link>
             </Button>
           </nav>

@@ -14,14 +14,14 @@ export function Hero() {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 10, opacity: 0 }}
           transition={{ delay: 0, duration: 0.4 }}
-          className="font-heading text-4xl sm:text-5xl tracking-tight lg:text-6xl text-balance font-bold"
+          className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
-          the
-          <span className="bg-clip-text bg-gradient-to-br from-accent to-primary text-secondary">
+          the&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
             product development team{" "}
           </span>
-          behind your favorite
-          <span className="text-primary bg-clip-text bg-gradient-to-br from-accent to-primary underline">
+          behind your favorite&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
             crypto and ai startups
           </span>
         </motion.h1>
@@ -34,7 +34,9 @@ export function Hero() {
             <Link href="#">Message Us</Link>
           </Button>
           <Button size="lg" asChild className="cursor-pointer">
-            <Link href="#">Schedule a Call</Link>
+            <Link href="https://cal.com/recursive" target="_blank">
+              Schedule a Call
+            </Link>
           </Button>
         </div>
       </div>

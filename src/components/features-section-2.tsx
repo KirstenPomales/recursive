@@ -9,42 +9,47 @@ export function Features2() {
   return (
     <section className="container flex flex-col items-center gap-6 py-24 sm:gap-7">
       <div className="flex flex-col gap-3">
-        <span className="font-bold uppercase text-center text-muted">
+        <span className="text-center font-bold uppercase text-muted">
           spreadsheets are a silent killer
         </span>
         <motion.h2
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 10, opacity: 0 }}
           transition={{ delay: 0, duration: 0.4 }}
-          className="font-heading tracking-tight text-balance font-bold text-3xl md:text-5xl text-center"
+          className="text-balance text-center font-heading text-3xl font-bold tracking-tight md:text-5xl"
         >
-          replace
-          <span className="bg-clip-text bg-gradient-to-br from-accent to-primary text-secondary line-through">
-            spreadsheets
+          replace&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary line-through">
+            spreadsheets<br></br>
           </span>
-          with
-          <span className="text-primary bg-clip-text bg-gradient-to-br from-accent to-primary underline">
+          with&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
             real-time insights
           </span>
         </motion.h2>
       </div>
-      <p className="text-lg text-muted-foreground text-balance text-center">
+      <p className="text-balance text-center text-lg text-muted-foreground">
         Recursive Labs provides custom tailored portfolio management software for Web3 venture
         firms. Our platforms streamline the way you track investments, manage token vesting
         schedules, and gain real-time insights into your portfolio performance.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:grid-cols-3">
         <Card className="border-0">
-          <CardContent className="p-6 flex flex-col gap-4 bg-background">
-            <div className="relative h-60">
-              <Image
-                src="/images/Screenshot-2025-01-07-at-12-33-11-PM.png"
-                alt="Image"
-                fill
-                className="object-cover w-full h-auto object-contain"
-              />
+          <CardContent className="flex flex-col gap-4 bg-background p-6">
+            <div className="relative flex-1">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-auto w-full rounded-xl border border-border shadow-lg"
+              >
+                <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
             </div>
-            <h3 className="text-2xl font-semibold leading-none tracking-tight mt-7 md:text-3xl">
+            <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
               Simplify Complex Investments
             </h3>
             <p className="text-sm text-muted-foreground">
@@ -53,16 +58,21 @@ export function Features2() {
           </CardContent>
         </Card>
         <Card className="border-0">
-          <CardContent className="p-6 flex flex-col gap-4 bg-background">
-            <div className="relative h-60">
-              <Image
-                src="/images/Screenshot-2025-01-07-at-12-33-11-PM.png"
-                alt="Image"
-                fill
-                className="object-cover w-full h-auto object-contain"
-              />
+          <CardContent className="flex flex-col gap-4 bg-background p-6">
+            <div className="relative flex-1">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-auto w-full rounded-xl border border-border shadow-lg"
+              >
+                <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
             </div>
-            <h3 className="text-2xl font-semibold leading-none tracking-tight mt-7 md:text-3xl">
+            <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
               View Real-Time Insights
             </h3>
             <p className="text-sm text-muted-foreground">
@@ -71,16 +81,21 @@ export function Features2() {
           </CardContent>
         </Card>
         <Card className="border-0">
-          <CardContent className="p-6 flex flex-col gap-4 bg-background border-0">
-            <div className="relative h-60">
-              <Image
-                src="/images/Screenshot-2025-01-07-at-12-33-11-PM.png"
-                alt="Image"
-                fill
-                className="object-cover h-auto float-left  mr-4 mb-4 w-full object-contain"
-              />
+          <CardContent className="flex flex-col gap-4 border-0 bg-background p-6">
+            <div className="relative flex-1">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="h-auto w-full rounded-xl border border-border shadow-lg"
+              >
+                <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
             </div>
-            <h3 className="font-semibold leading-none tracking-tight mt-7 text-2xl md:text-3xl">
+            <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
               Eliminate Spreadsheets
             </h3>
             <p className="text-sm text-muted-foreground">

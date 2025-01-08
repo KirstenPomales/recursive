@@ -14,14 +14,14 @@ export function Hero2() {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 10, opacity: 0 }}
           transition={{ delay: 0, duration: 0.4 }}
-          className="font-heading text-4xl sm:text-5xl tracking-tight lg:text-6xl text-balance font-bold"
+          className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
-          custom
-          <span className="bg-clip-text bg-gradient-to-br from-accent to-primary text-secondary">
+          custom&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
             portfolio management tools{" "}
           </span>
-          for
-          <span className="text-primary bg-clip-text bg-gradient-to-br from-accent to-primary underline">
+          for&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
             crypto native funds
           </span>
         </motion.h1>
@@ -34,19 +34,23 @@ export function Hero2() {
             <Link href="#">Message Us</Link>
           </Button>
           <Button size="lg" asChild className="cursor-pointer">
-            <Link href="#">Schedule a Call</Link>
+            <Link href="https://cal.com/recursive" target="_blank">
+              Schedule a Call
+            </Link>
           </Button>
         </div>
       </div>
       <div className="relative flex-1">
-        <Image
-          src="/images/Screenshot-2025-01-07-at-12-33-11-PM.png"
-          alt="SaaS Dashboard"
-          width={1000}
-          height={698}
-          priority
-          className="shadow-lg"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-auto w-full rounded-xl border border-border shadow-lg"
+        >
+          <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
       </div>
     </section>
