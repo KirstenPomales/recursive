@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -20,9 +21,9 @@ export function Features() {
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
             specialists{" "}
           </span>
-          that
+          that&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
-            &nbsp;know your niche
+            know your niche
           </span>
         </motion.h2>
       </div>
@@ -47,7 +48,9 @@ export function Features() {
               We build tools that help crypto VC firms manage their portfolios and understand token
               unlocks in real-time.
             </p>
-            <Button className="mr-auto">Learn More</Button>
+            <Button className="mr-auto cursor-pointer">
+              <Link href="/tooling">Learn More</Link>
+            </Button>
           </CardContent>
         </Card>
         <Card className="border-0">
@@ -67,7 +70,11 @@ export function Features() {
               We design and build full-stack DAPPs and apps, powered by the most modern frameworks
               and AI models.
             </p>
-            <Button className="mr-auto">Learn More</Button>
+            <Button className="mr-auto cursor-pointer" variant="outline">
+              <Link href="https://cal.com/recursive" target="_blank">
+                Schedule a Call
+              </Link>
+            </Button>
           </CardContent>
         </Card>
       </div>

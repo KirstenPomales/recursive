@@ -64,7 +64,9 @@ export function Hero4() {
         </motion.h1>
         <div className="grid grid-cols-2 gap-3">
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
-            <Link href="#">Message Us</Link>
+            <Link href="https://t.me/hellokirsten" target="_blank">
+              Message Us
+            </Link>
           </Button>
         </div>
       </div>
