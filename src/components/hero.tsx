@@ -25,9 +25,10 @@ export function Hero() {
             crypto and ai startups
           </span>
         </motion.h1>
-        <p className="max-w-md text-lg text-muted-foreground lg:text-left">
+        <p className="text-left text-lg text-muted-foreground">
           Recursive Studios is a collective of the best engineering talent in deep tech: from
-          business tooling experts to protocol infra core devs.
+          business tooling experts to protocol infra core devs. We help startups and businesses
+          build amazing products.
         </p>
         <div className="grid grid-cols-2 gap-3">
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">

@@ -25,7 +25,7 @@ export function Hero2() {
             crypto native funds
           </span>
         </motion.h1>
-        <p className="max-w-md text-lg text-muted-foreground lg:text-left">
+        <p className="text-lg text-muted-foreground">
           Recursive Studios has helped some of the top VC firms in web3 gather real-time insights to
           improve fund management strategies with custom portfolio management tools.
         </p>
