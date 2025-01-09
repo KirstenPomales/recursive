@@ -12,7 +12,7 @@ export default function ToolingPage() {
       <Header2 />
       <Hero2 />
       <Features2 />
-      <Hero3 />
+      {/* <Hero3 /> */}
       <CtaSection2 />
       <Footer2 />
     </>

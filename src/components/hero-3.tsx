@@ -30,9 +30,9 @@ export function Hero3() {
         </p>
         <div>
           <p className="max-w-md text-left text-lg text-muted-foreground">
-            We built Dragonfly Automation: a CRM that allows the portfolio managers to record all
-            investment activity and updates, and a reporting dashboard that gives partners and
-            portfolio managers access to the real-time data in an easy-to-understand interface.
+            We a CRM that allows the portfolio managers to record all investment activity and
+            updates, and a reporting dashboard that gives partners and portfolio managers access to
+            the real-time data in an easy-to-understand interface.
           </p>
           <ul className="mt-5 list-inside space-y-2">
             <li className="flex items-center">

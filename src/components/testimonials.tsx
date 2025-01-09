@@ -31,16 +31,16 @@ export function Testimonials() {
         We&apos;ve collaborated with dozens of teams building and financing future-proof technology.
       </p>
       <Carousel opts={{ align: "start", loop: true }} className="mt-6 w-full px-4 xl:px-0">
-        <CarouselPrevious className="-left-6 size-7 xl:-left-12 xl:size-8" />
+        {/* <CarouselPrevious className="-left-6 size-7 xl:-left-12 xl:size-8" /> */}
         <CarouselContent className="pb-4">
-          <CarouselTestimonialCard
+          {/* <CarouselTestimonialCard
             name="Someone Important"
             username="Dragonfly Capital"
             image="/images/testimonial-3.avif"
             logoImage="/images/dragonfly-logo.png"
             projectContext="Portfolio management platform"
             text="Curabitur at quam eget eros semper euismod vitae at neque. Ut ultrices ut tortor et feugiat. Etiam vitae nisi eleifend, blandit ligula quis, sodales neque. blandit ligula quis, sodales neque. blandit ligula quis."
-          />
+          /> */}
           <CarouselTestimonialCard
             name="Piero Gancia"
             username="Atomic Fund"
@@ -57,16 +57,16 @@ export function Testimonials() {
             projectContext="Commodities ERP system"
             text="Their mobile first ERP system has brought our business into the 21st century. He closely worked with us to understand our operations to give us a tailored solution that fits perfectly into our existing workflows."
           />
-          <CarouselTestimonialCard
+          {/* <CarouselTestimonialCard
             name="Someone Important"
             username="Other ERP Client"
             image="/images/testimonial-4.avif"
             logoImage="/images/bloom-logo.png"
             projectContext="Custom ERP Implementation"
             text="Suspendisse a velit elit. Curabitur augue libero, vulputate sed dui id, sodales venenatis sem. Suspendisse dapibus neque eu justo volutpat gravida."
-          />
+          /> */}
         </CarouselContent>
-        <CarouselNext className="-right-6 size-7 xl:-right-12 xl:size-8" />
+        {/* <CarouselNext className="-right-6 size-7 xl:-right-12 xl:size-8" /> */}
       </Carousel>
     </section>
   );

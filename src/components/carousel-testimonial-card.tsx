@@ -25,12 +25,14 @@ export function CarouselTestimonialCard({
   className,
 }: CarouselTestimonialCardProps) {
   return (
-    <CarouselItem className={cn("md:basis-1/2 lg:basis-1/3", className)}>
+    <CarouselItem className={cn("md:basis-1/2 lg:basis-1/2", className)}>
       <div className="h-full p-1">
         <Card className="h-full border border-border bg-black shadow-md">
           <CardContent className="flex flex-col items-start gap-2 p-7 pt-4">
             <div className="relative -mt-1 h-24 w-48">
-              {logoImage && <Image src={logoImage} alt={`${username} logo`} fill className="object-contain" />}
+              {logoImage && (
+                <Image src={logoImage} alt={`${username} logo`} fill className="object-contain" />
+              )}
             </div>
             <div className="flex items-center gap-4">
               <div className="relative size-10">
