@@ -1,15 +1,15 @@
-import Image from "next/image";
 import { CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
-import { CarouselItem } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import { CarouselItem } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 
 interface CarouselTestimonialCardProps {
   name: string;
   username: string;
   image: string;
-  logoImage: string;
+  logoImage?: string;
   text: string;
   projectContext?: string;
   className?: string;
@@ -30,7 +30,7 @@ export function CarouselTestimonialCard({
         <Card className="h-full border border-border bg-black shadow-md">
           <CardContent className="flex flex-col items-start gap-2 p-7 pt-4">
             <div className="relative -mt-1 h-24 w-48">
-              <Image src={logoImage} alt={`${username} logo`} fill className="object-contain" />
+              {logoImage && <Image src={logoImage} alt={`${username} logo`} fill className="object-contain" />}
             </div>
             <div className="flex items-center gap-4">
               <div className="relative size-10">
