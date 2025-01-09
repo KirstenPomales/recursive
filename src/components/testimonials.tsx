@@ -2,13 +2,13 @@
 
 import { motion } from "framer-motion";
 
+import { CarouselTestimonialCard } from "@/components/carousel-testimonial-card";
 import {
   Carousel,
-  CarouselPrevious,
   CarouselContent,
   CarouselNext,
+  CarouselPrevious,
 } from "@/components/ui/carousel";
-import { CarouselTestimonialCard } from "@/components/carousel-testimonial-card";
 
 export function Testimonials() {
   return (
@@ -19,7 +19,7 @@ export function Testimonials() {
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 10, opacity: 0 }}
           transition={{ delay: 0, duration: 0.4 }}
-          className="text-balance font-heading text-3xl font-bold tracking-tight sm:text-4xl sm:text-5xl md:text-5xl"
+          className="text-balance font-heading text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"
         >
           building for
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
