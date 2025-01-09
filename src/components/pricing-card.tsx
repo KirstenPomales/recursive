@@ -1,7 +1,7 @@
+import { CtaButton } from "@/components/cta-button";
+import { PricingFeatureItem } from "@/components/pricing-feature-item";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { PricingFeatureItem } from "@/components/pricing-feature-item";
-import { CtaButton } from "@/components/cta-button";
 import { cn } from "@/lib/utils";
 
 interface PricingCardProps {
@@ -30,9 +30,9 @@ export function PricingCard({
   className,
 }: PricingCardProps) {
   return (
-    <Card className={cn("relative shadow-lg border-0 border", className)}>
+    <Card className={cn("relative shadow-lg border", className)}>
       <CardContent className="flex flex-col items-start p-8">
-        <h4 className="font-heading font-semibold text-foreground font-bold text-3xl">{name}</h4>
+        <h4 className="font-heading text-foreground font-bold text-3xl">{name}</h4>
         <div className="mt-5">
           <span className="font-heading text-5xl font-semibold">${price}</span>
           <span className="text-sm"> /month</span>

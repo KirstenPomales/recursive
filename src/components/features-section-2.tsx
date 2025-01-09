@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -33,7 +32,7 @@ export function Features2() {
         firms. Our platforms streamline the way you track investments, manage token vesting
         schedules, and gain real-time insights into your portfolio performance.
       </p>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         <Card className="border-0">
           <CardContent className="flex flex-col gap-4 bg-background p-6">
             <div className="relative flex-1">
