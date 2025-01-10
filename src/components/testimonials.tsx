@@ -52,7 +52,7 @@ export function Testimonials() {
           <CarouselTestimonialCard
             name="Anshul Gupta"
             username="Bloom Impex"
-            image="/images/anshul.jpeg"
+            image="/images/anshul.png"
             logoImage="/images/bloom-logo.png"
             projectContext="Commodities ERP system"
             text="Their mobile first ERP system has brought our business into the 21st century. He closely worked with us to understand our operations to give us a tailored solution that fits perfectly into our existing workflows."
