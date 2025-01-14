@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -36,7 +37,7 @@ export function Features2() {
         <Card className="border-0">
           <CardContent className="flex flex-col gap-4 bg-background p-6">
             <div className="relative flex-1">
-              <video
+              {/* <video
                 autoPlay
                 loop
                 muted
@@ -45,7 +46,15 @@ export function Features2() {
               >
                 <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
+              <Image
+                alt="Recursive Studio VC Portfolio Management Tool"
+                src="/images/vc/vc-multichart.png"
+                width={900}
+                height={698}
+                priority
+                className="mt-0"
+              />
               <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
             </div>
             <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
@@ -59,7 +68,7 @@ export function Features2() {
         <Card className="border-0">
           <CardContent className="flex flex-col gap-4 bg-background p-6">
             <div className="relative flex-1">
-              <video
+              {/* <video
                 autoPlay
                 loop
                 muted
@@ -68,7 +77,15 @@ export function Features2() {
               >
                 <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
+              <Image
+                alt="Recursive Studio VC Portfolio Management Tool"
+                src="/images/vc/vc-column-detail.png"
+                width={900}
+                height={698}
+                priority
+                className="mt-0"
+              />
               <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
             </div>
             <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
@@ -82,7 +99,7 @@ export function Features2() {
         <Card className="border-0">
           <CardContent className="flex flex-col gap-4 border-0 bg-background p-6">
             <div className="relative flex-1">
-              <video
+              {/* <video
                 autoPlay
                 loop
                 muted
@@ -91,7 +108,15 @@ export function Features2() {
               >
                 <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-              </video>
+              </video> */}
+              <Image
+                alt="Recursive Studio VC Portfolio Management Tool"
+                src="/images/vc/vc-list.png"
+                width={900}
+                height={698}
+                priority
+                className="mt-0"
+              />
               <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
             </div>
             <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">

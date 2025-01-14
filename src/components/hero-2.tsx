@@ -43,7 +43,7 @@ export function Hero2() {
         </div>
       </div>
       <div className="relative flex-1">
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -52,7 +52,15 @@ export function Hero2() {
         >
           <source src="/images/dragonfly-automation.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> */}
+        <Image
+          alt="SaaS Dashboard"
+          src="/images/vc/vc-hero.png"
+          width={900}
+          height={698}
+          priority
+          className="mt-0"
+        />
         <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
       </div>
     </section>
