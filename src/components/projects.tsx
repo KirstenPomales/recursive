@@ -10,7 +10,7 @@ export function Projects() {
     <div className="container mx-auto px-4 pb-12">
       <div className="space-y-8">
         <h2 className="font-heading text-2xl font-semibold">A few of our past projects...</h2>
-        <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse">
+        {/* <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse">
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Portfolio Management System</h2>
             <p className="text-muted-foreground">
@@ -44,7 +44,7 @@ export function Projects() {
               className="rounded-lg object-cover"
             />
           </div>
-        </div>
+        </div> */}
         <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row">
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Ibi-Cash</h2>
