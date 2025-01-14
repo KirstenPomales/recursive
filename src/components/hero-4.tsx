@@ -19,7 +19,7 @@ export function Hero4() {
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
             join{" "}
           </span>
-          our
+          our{" "}
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
             guild
           </span>
@@ -32,30 +32,6 @@ export function Hero4() {
               className="max-w-1/2 mt-5  h-auto  w-1/2 object-contain"
             />
           </div>
-          <p className="max-w-md text-lg text-muted-foreground lg:text-left">
-            Recursive Studios was founded by
-            <a
-              href="https://www.linkedin.com/in/singhalpranav/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary"
-            >
-              &nbsp;Pranav&nbsp;
-            </a>
-            and
-            <a
-              href="https://www.linkedin.com/in/kirstenpomales/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary"
-            >
-              &nbsp; Kirsten&nbsp;
-            </a>
-            to solve real-world problems using web3 tech. They&apos;ve each been building in the
-            blockchain space for the past 7 years - leading VC-backed startups, building deep
-            protocol infra, and growing open-source communities. Together, they lead the team behind
-            Recursive.{" "}
-          </p>
           <p className="mt-5 max-w-md text-lg text-muted-foreground lg:text-left">
             If you&apos;re an independent product designer or engineer seeking a community that
             tackles interesting tech problems together, let&apos;s connect. Remote native. Freedom

@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Leadership } from "@/components/leadership";
+import { Hero4 } from "@/components/hero-4";
 
 export const metadata = {
   title: "Leadership | Our Team",
@@ -12,6 +13,7 @@ export default function LeadershipPage() {
     <main className="flex-1">
       <Header />
       <Leadership />
+      <Hero4 />
       <Footer />
     </main>
   );

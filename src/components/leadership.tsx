@@ -3,19 +3,39 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
 
 export function Leadership() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <div className="mx-auto mb-12 max-w-3xl text-center">
-        <h1 className="mb-4 font-heading text-4xl font-bold">Our Leadership Team</h1>
+      <div className="flex flex-1 flex-col items-center gap-8 lg:items-start lg:gap-10">
+        <motion.h1
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 10, opacity: 0 }}
+          transition={{ delay: 0, duration: 0.4 }}
+          className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+        >
+          over&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
+            7 years{" "}
+          </span>
+          experience building&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
+            crypto native products
+          </span>
+        </motion.h1>
         <p className="text-lg text-muted-foreground">
-          Meet the visionaries and industry experts leading our company towards innovation and
-          excellence in the web3 space.
+          Recursive Studios was founded by Pranav and Kirsten to solve real-world problems using
+          web3 tech. They&apos;ve each been building in the blockchain space for the past 7 years -
+          leading VC-backed startups, building deep protocol infra, and growing open-source
+          communities. Together, they lead the team behind Recursive.
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="grid gap-8 pt-12
+       md:grid-cols-2 lg:grid-cols-3"
+      >
         {/* CEO */}
         <div className="flex flex-col items-center rounded-lg border bg-card p-6">
           <div className="relative mb-4 size-[200px]">
