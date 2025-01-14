@@ -10,7 +10,7 @@ export function Projects() {
     <div className="container mx-auto px-4 pb-12">
       <div className="space-y-8">
         <h2 className="font-heading text-2xl font-semibold">A few of our past projects...</h2>
-        {/* <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse">
+        <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse">
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Portfolio Management System</h2>
             <p className="text-muted-foreground">
@@ -38,13 +38,13 @@ export function Projects() {
           </div>
           <div className="relative h-[200px] w-full md:w-[300px]">
             <Image
-              src="/images/placeholder.png"
+              src="/images/projects/mister-fox.jpeg"
               alt="E-commerce Redesign Project"
               fill
               className="rounded-lg object-cover"
             />
           </div>
-        </div> */}
+        </div>
         <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row">
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Ibi-Cash</h2>
@@ -63,7 +63,7 @@ export function Projects() {
               </Link>
             </Button>
             <div className="mt-10 flex items-center">
-              <Image src="/images/piero.jpeg" alt="Reviewer" className="size-10 rounded-full" />
+              <img src="/images/piero.jpeg" alt="Reviewer" className="size-10 rounded-full" />
               <div className="ml-3">
                 <p className="font-semibold">Piero Ganciae</p>
                 <p className="text-muted-foreground">Atomic Fund</p>
@@ -119,7 +119,7 @@ export function Projects() {
               <Badge variant="outline">UX Design</Badge>
             </div>
             <div className="mt-4 flex items-center">
-              <Image src="/images/anshul.png" alt="Reviewer" className="size-10 rounded-full" />
+              <img src="/images/anshul.png" alt="Reviewer" className="size-10 rounded-full" />
               <div className="ml-3">
                 <p className="font-semibold">Anshul Gupta</p>
                 <p className="text-muted-foreground">Bloom Impex</p>
@@ -144,9 +144,9 @@ export function Projects() {
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Freelance Search</h2>
             <p className="text-muted-foreground">
-              An AI agent that reads real-time web data from the world&apos;s top freelance
-              marketplaces, and allows users to run detailed search over 1 million jobs. An API that
-              opens up access to this data to 3rd party apps.
+              An AI agent that reads real-time web data from the world’s top freelance marketplaces,
+              and allows users to run detailed search over 1 million jobs. An API that opens up
+              access to this data to 3rd party apps.
             </p>
             <div className="flex gap-2">
               <Badge>AI Agents</Badge>
