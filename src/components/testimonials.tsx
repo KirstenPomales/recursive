@@ -5,9 +5,7 @@ import { motion } from "framer-motion";
 import { CarouselTestimonialCard } from "@/components/carousel-testimonial-card";
 import {
   Carousel,
-  CarouselContent,
-  CarouselNext,
-  CarouselPrevious,
+  CarouselContent
 } from "@/components/ui/carousel";
 
 export function Testimonials() {
@@ -52,7 +50,7 @@ export function Testimonials() {
           <CarouselTestimonialCard
             name="Anshul Gupta"
             username="Bloom Impex"
-            image="/images/anshul.png"
+            image="/images/Anshul.jpeg"
             logoImage="/images/bloom-logo.png"
             projectContext="Commodities ERP system"
             text="Their mobile first ERP system has brought our business into the 21st century. He closely worked with us to understand our operations to give us a tailored solution that fits perfectly into our existing workflows."
