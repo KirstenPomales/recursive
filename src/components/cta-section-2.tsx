@@ -21,11 +21,21 @@ export function CtaSection2() {
           </span>
           what you are missing
         </motion.h2>
-        <p className="max-w-xl text-center text-lg text-primary-foreground/80">
+        <motion.p
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 10, opacity: 0 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
+          className="max-w-xl text-center text-lg text-primary-foreground/80"
+        >
           Say goodbye to spreadsheets in 2025. Schedule a call to discover how we can empower your
           firm with the business intellegence you&apos;re missing out on.
-        </p>
-        <div className="grid grid-cols-2 gap-3">
+        </motion.p>
+        <motion.div
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 10, opacity: 0 }}
+          transition={{ delay: 0.2, duration: 0.4 }}
+          className="grid grid-cols-2 gap-3"
+        >
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
             <Link href="https://t.me/hellokirsten" target="_blank">
               Message Us
@@ -36,15 +46,21 @@ export function CtaSection2() {
               Schedule a Call
             </Link>
           </Button>
-        </div>
-        <Image
-          alt="SaaS Dashboard"
-          src="/images/Recursive-banner.png"
-          width={900}
-          height={698}
-          priority
-          className="mt-0 lg:-mb-40"
-        />
+        </motion.div>
+        <motion.div
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 20, opacity: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+        >
+          <Image
+            alt="SaaS Dashboard"
+            src="/images/Recursive-banner.png"
+            width={900}
+            height={698}
+            priority
+            className="mt-0 lg:-mb-40"
+          />
+        </motion.div>
       </div>
     </section>
   );

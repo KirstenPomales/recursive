@@ -13,7 +13,7 @@ export function Hero() {
         <motion.h1
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 10, opacity: 0 }}
-          transition={{ delay: 0, duration: 0.4 }}
+          transition={{ duration: 0.4 }}
           className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
           the&nbsp;
@@ -25,12 +25,22 @@ export function Hero() {
             crypto and ai startups
           </span>
         </motion.h1>
-        <p className="text-left text-lg text-muted-foreground">
-          Recursive Studios is a collective of the best engineering talent in deep tech: from
-          business tooling experts to protocol infra core devs. We help startups and businesses
-          build amazing products.
-        </p>
-        <div className="grid grid-cols-2 gap-3">
+        <motion.p
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 10, opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
+          className="text-left text-lg text-muted-foreground"
+        >
+          Recursive Studios is a collective of the best engineering talent in web 3. We help
+          startups and businesses launch powerful protocols and apps that solve the biggest problems
+          in crypto and AI.
+        </motion.p>
+        <motion.div
+          animate={{ y: 0, opacity: 1 }}
+          initial={{ y: 10, opacity: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="grid grid-cols-2 gap-3"
+        >
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
             <Link href="https://t.me/hellokirsten" target="_blank">
               Message Us
@@ -41,9 +51,14 @@ export function Hero() {
               Schedule a Call
             </Link>
           </Button>
-        </div>
+        </motion.div>
       </div>
-      <div className="relative flex-1">
+      <motion.div
+        animate={{ y: 0, opacity: 1 }}
+        initial={{ y: 10, opacity: 0 }}
+        transition={{ duration: 0.4, delay: 0.3 }}
+        className="relative flex-1"
+      >
         <Image
           src="/images/Untasdfasdfitled-design.png"
           alt="SaaS Dashboard"
@@ -53,7 +68,7 @@ export function Hero() {
           className="shadow-lg"
         />
         <div className="absolute inset-0 -z-10 bg-primary/20 [filter:blur(180px)]" />
-      </div>
+      </motion.div>
     </section>
   );
 }

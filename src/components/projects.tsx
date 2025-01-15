@@ -4,48 +4,47 @@ import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export function Projects() {
-  return (
-    <div className="container mx-auto px-4 pb-12">
-      <div className="space-y-8">
-        <h2 className="font-heading text-2xl font-semibold">A few of our past projects...</h2>
-        {/* <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse">
-          <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Portfolio Management System</h2>
-            <p className="text-muted-foreground">
-              An intent based chatbot that can execute transactions in a non-custodial way.
-            </p>
-            <div className="flex gap-2">
-              <Badge>Venture Capital</Badge>
-              <Badge variant="secondary">On-Chain Analytics</Badge>
-              <Badge variant="outline">Dashboards</Badge>
-            </div>
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
-            <Button asChild>
-              <Link href="/tooling" className="cursor-pointer">
-                Explore our Venture Tools
-              </Link>
-            </Button>
-            <div className="mt-10 flex items-center">
-              <img src="/images/piero.jpeg" alt="Reviewer" className="size-10 rounded-full" />
-              <div className="ml-3">
-                <p className="font-semibold">Dragonfly Review</p>
-                <p className="text-muted-foreground">Dragonfly Capital</p>
-                <p className="text-sm italic">&quot;Really great.&quot;</p>
-              </div>
-            </div>
-          </div>
-          <div className="relative h-[200px] w-full md:w-[300px]">
-            <Image
-              src="/images/projects/mister-fox.jpeg"
-              alt="E-commerce Redesign Project"
-              fill
-              className="rounded-lg object-cover"
-            />
-          </div>
-        </div> */}
-        <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row">
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: [0.04, 0.62, 0.23, 0.98],
+      },
+    },
+  };
+
+  return (
+    <motion.div
+      className="container mx-auto px-4 pb-12"
+      initial="hidden"
+      animate="show"
+      variants={container}
+    >
+      <motion.div className="space-y-8" variants={container}>
+        <motion.h2 className="font-heading text-2xl font-semibold" variants={item}>
+          A few of our past projects...
+        </motion.h2>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          variants={item}
+        >
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Ibi-Cash</h2>
             <p className="text-muted-foreground">
@@ -84,8 +83,12 @@ export function Projects() {
               className="rounded-lg object-cover"
             />
           </div>
-        </div>
-        <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse">
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
+          variants={item}
+        >
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Mr. Fox</h2>
             <p className="text-muted-foreground">
@@ -105,8 +108,12 @@ export function Projects() {
               className="rounded-lg object-cover"
             />
           </div>
-        </div>
-        <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row">
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          variants={item}
+        >
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Brahma</h2>
             <p className="text-muted-foreground">
@@ -139,8 +146,12 @@ export function Projects() {
               className="rounded-lg object-cover"
             />
           </div>
-        </div>
-        <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse">
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
+          variants={item}
+        >
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Freelance Search</h2>
             <p className="text-muted-foreground">
@@ -164,8 +175,12 @@ export function Projects() {
               className="rounded-lg object-cover"
             />
           </div>
-        </div>
-        <div className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row">
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          variants={item}
+        >
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Revyou Telegram Mini App</h2>
             <p className="text-muted-foreground">
@@ -186,8 +201,8 @@ export function Projects() {
               className="rounded-lg object-cover"
             />
           </div>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

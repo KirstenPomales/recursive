@@ -6,14 +6,32 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0 },
+};
+
 export function HeroProjects() {
   return (
-    <section className="container flex flex-col items-center gap-10 pb-28 pt-20 sm:gap-14 lg:flex-row">
+    <motion.section
+      variants={container}
+      initial="hidden"
+      animate="show"
+      className="container flex flex-col items-center gap-10 pb-28 pt-20 sm:gap-14 lg:flex-row"
+    >
       <div className="flex flex-1 flex-col items-center gap-8 lg:items-start lg:gap-10">
         <motion.h1
-          animate={{ y: 0, opacity: 1 }}
-          initial={{ y: 10, opacity: 0 }}
-          transition={{ delay: 0, duration: 0.4 }}
+          variants={item}
           className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
           over&nbsp;
@@ -25,11 +43,11 @@ export function HeroProjects() {
             crypto native products
           </span>
         </motion.h1>
-        <p className="text-lg text-muted-foreground">
+        <motion.p variants={item} className="text-lg text-muted-foreground">
           Recursive Studios leadership has helped teams ranging from enterprise blockchain consortia
           and defi startups to crypto-native venture firms and NFT marketplaces.
-        </p>
-        <div className="grid grid-cols-2 gap-3">
+        </motion.p>
+        <motion.div variants={item} className="grid grid-cols-2 gap-3">
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
             <Link href="/leadership">About Our Team</Link>
           </Button>
@@ -38,8 +56,8 @@ export function HeroProjects() {
               Schedule a Call
             </Link>
           </Button>
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 }
