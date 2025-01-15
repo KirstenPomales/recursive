@@ -158,7 +158,7 @@ export function Leadership() {
               <p className="text-sm text-muted-foreground">2025</p>
               <p className="text-sm">
                 While cursor is amazing for development, bootstrapping web3 projects can be tricky.
-                This boilerplate is Pranav's go-to for building DAPPs fast.
+                This boilerplate is Pranav&apos;s go-to for building DAPPs fast.
               </p>
             </div>
           </a>
@@ -251,11 +251,11 @@ export function Leadership() {
               to over 10K users.{" "}
             </p>
             <p className="text-muted-foreground">
-              Before TalentLayer, Kirsten led the IEEE's Blockchain Governance Working Group from
-              2018 to 2020, where over 200 open-source researchers contributed to research around
-              the governance of decentralized protocols. During that time, she also consulted major
-              enterprise blockchain projects including banking consortiums, blockchain as a service
-              companies, and more. Kirsten has been featured as a speaker on blockchain
+              Before TalentLayer, Kirsten led the IEEE&apos;s Blockchain Governance Working Group
+              from 2018 to 2020, where over 200 open-source researchers contributed to research
+              around the governance of decentralized protocols. During that time, she also consulted
+              major enterprise blockchain projects including banking consortiums, blockchain as a
+              service companies, and more. Kirsten has been featured as a speaker on blockchain
               infrastructure design by the European Commission, Fedex Institute, Consensys, and many
               others.
             </p>

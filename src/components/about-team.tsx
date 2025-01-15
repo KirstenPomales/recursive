@@ -16,7 +16,7 @@ export function AboutTeam() {
             alt="Image"
             width={500}
             height={500}
-            className="max-w-1/2 h-auto  object-contain"
+            className="h-auto  object-contain"
           />
         </div>
         <motion.h1

@@ -12,7 +12,7 @@ export function Hero4() {
       id="joinus"
       className="container flex flex-col items-center gap-10 pb-28 pt-20 sm:gap-14 lg:flex-row"
     >
-      <div className="flex flex-1 flex-col items-left sm:items-center gap-8 lg:items-start lg:gap-10">
+      <div className="flex flex-1 flex-col sm:items-center gap-8 lg:items-start lg:gap-10">
         <motion.h1
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 10, opacity: 0 }}
@@ -33,7 +33,7 @@ export function Hero4() {
             alt="Image"
             width={500}
             height={500}
-            className="max-w-1/2 mt-5  h-auto  w-1/2 object-contain"
+            className="mt-5  h-auto  w-1/2 object-contain"
           />
         </div>
         <div className="text-balance text-4xl tracking-tight sm:text-5xl lg:text-6xl">
