@@ -50,7 +50,7 @@ export function CtaSectionLeader() {
           variants={itemVariants}
           className="max-w-xl text-center text-lg text-primary-foreground/80"
         >
-          Recursive Studios is a collective of the best engineering talent in deep tech. Let's
+          Recursive Studios is a collective of the best engineering talent in deep tech. Let&apos;s
           explore how we can help you achive your product goals in 2025.{" "}
         </motion.p>
         <motion.div variants={itemVariants} className="grid grid-cols-2 gap-3">
