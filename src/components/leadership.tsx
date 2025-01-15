@@ -363,8 +363,8 @@ export function Leadership() {
               </h4>
               <p className="text-sm text-muted-foreground">2022</p>
               <p className="text-sm pt-2">
-                A technical workshop at SpaghettETH, reviewing the archetecture of "open graph
-                networks" like TalentLayer, a protocol for building marketplaces.
+                A technical workshop at SpaghettETH, reviewing the archetecture of open graph
+                networks like TalentLayer, a protocol for building marketplaces.
               </p>
             </div>
           </a>
