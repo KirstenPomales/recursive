@@ -156,7 +156,7 @@ export function Leadership() {
                 Web 3 Boiler Plate | Open-Source App Starter Codebase
               </h4>
               <p className="text-sm text-muted-foreground">2025</p>
-              <p className="text-sm">
+              <p className="text-sm pt-2">
                 While cursor is amazing for development, bootstrapping web3 projects can be tricky.
                 This boilerplate is Pranav&apos;s go-to for building DAPPs fast.
               </p>
@@ -183,7 +183,7 @@ export function Leadership() {
                 DBlock Ed, a Blockchian Developer Bootcamp
               </h4>
               <p className="text-sm text-muted-foreground">2024</p>
-              <p className="text-sm">
+              <p className="text-sm pt-2">
                 Pranav is a founder and educator at DBlock Ed, where he produces technical education
                 content for engineers breaking into Web 3 and smart contract development.
               </p>
@@ -210,7 +210,7 @@ export function Leadership() {
                 Building Web-3 Powered Games Using Waku Protocol
               </h4>
               <p className="text-sm text-muted-foreground">2024</p>
-              <p className="text-sm">
+              <p className="text-sm pt-2">
                 A live-coding tutorial walking engineers through how to develop games using Waku
                 protocol, a decentralized messaging and data streaming protocol.
               </p>
@@ -335,7 +335,7 @@ export function Leadership() {
                 Blockchain & the Future of Work Panel Discussion at ETH Barcelona
               </h4>
               <p className="text-sm text-muted-foreground">2023</p>
-              <p className="text-sm">
+              <p className="text-sm pt-2">
                 A panel discussion on how blockchian technology is powering work tech and how
                 innovative hiring patterns are being applied in Web 3.
               </p>
@@ -344,28 +344,27 @@ export function Leadership() {
 
           {/* European Commission Card */}
           <a
-            href="https://youtu.be/rymyV-V30nY?si=xAyEy-9RRCDrPZ9B&t=1269"
+            href="https://youtu.be/iOsIE7Ap5s0?si=O9vJl4rnvlY4irA4&t=293"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col rounded-lg border bg-card transition-transform hover:scale-105"
           >
             <div className="relative h-48">
               <Image
-                src="/images/leadership/inatba1.png"
-                alt="Standardization in Blockchian Governance, INATBA European Comission Blockchian Association"
+                src="/images/projects/spaghetteth.png"
+                alt="Blockchian Applications Kirsten Pomales"
                 fill
                 className="rounded-t-lg object-cover"
               />
             </div>
             <div className="flex flex-1 flex-col p-6">
               <h4 className="mb-2 font-heading text-xl font-semibold">
-                Blockchian Governance Standardization with the European Comission&apos;s INATBA
+                Introduction to Open Graph Networks and TalentLayer Protocol
               </h4>
-              <p className="text-sm text-muted-foreground">2020</p>
-              <p className="text-sm">
-                A series of talks from blockchain governance researchers in the European Union
-                discussing global collaboration around blockchain software development and
-                governance design.
+              <p className="text-sm text-muted-foreground">2022</p>
+              <p className="text-sm pt-2">
+                A technical workshop at SpaghettETH, reviewing the archetecture of open graph
+                networks like TalentLayer, a protocol for building marketplaces.
               </p>
             </div>
           </a>
