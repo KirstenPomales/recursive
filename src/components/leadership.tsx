@@ -173,88 +173,104 @@ export function Leadership() {
           className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
           {/* ETH Lisbon Card */}
-          <motion.a
+          <motion.div
             variants={itemVariants}
-            href="https://github.com/pranav-singhal/create-dapp-kit#readme"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col rounded-lg border bg-card transition-transform hover:scale-105"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="relative h-48">
-              <Image
-                src="/images/leadership/starter.png"
-                alt="ETH Lisbon"
-                fill
-                className="rounded-t-lg object-cover"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <h4 className="mb-2 font-heading text-xl font-semibold">
-                Web 3 Boiler Plate | Open-Source App Starter Codebase
-              </h4>
-              <p className="text-sm text-muted-foreground">2025</p>
-              <p className="text-sm">
-                While cursor is amazing for development, bootstrapping web3 projects can be tricky.
-                This boilerplate is Pranav&apos;s go-to for building DAPPs fast.
-              </p>
-            </div>
-          </motion.a>
+            <a
+              href="https://github.com/pranav-singhal/create-dapp-kit#readme"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/starter.png"
+                  alt="ETH Lisbon"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Web 3 Boiler Plate | Open-Source App Starter Codebase
+                </h4>
+                <p className="text-sm text-muted-foreground">2025</p>
+                <p className="text-sm">
+                  While cursor is amazing for development, bootstrapping web3 projects can be
+                  tricky. This boilerplate is Pranav's go-to for building DAPPs fast.
+                </p>
+              </div>
+            </a>
+          </motion.div>
 
           {/* European Commission Card */}
-          <motion.a
+          <motion.div
             variants={itemVariants}
-            href="https://www.dblocked.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col rounded-lg border bg-card transition-transform hover:scale-105"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="relative h-48">
-              <Image
-                src="/images/leadership/dblock.png"
-                alt="Pranav Singhal DBlock Ed"
-                fill
-                className="rounded-t-lg object-cover"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <h4 className="mb-2 font-heading text-xl font-semibold">
-                DBlock Ed, a Blockchian Developer Bootcamp
-              </h4>
-              <p className="text-sm text-muted-foreground">2024</p>
-              <p className="text-sm">
-                Pranav is a founder and educator at DBlock Ed, where he produces technical education
-                content for engineers breaking into Web 3 and smart contract development.
-              </p>
-            </div>
-          </motion.a>
+            <a
+              href="https://www.dblocked.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/dblock.png"
+                  alt="Pranav Singhal DBlock Ed"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  DBlock Ed, a Blockchian Developer Bootcamp
+                </h4>
+                <p className="text-sm text-muted-foreground">2024</p>
+                <p className="text-sm">
+                  Pranav is a founder and educator at DBlock Ed, where he produces technical
+                  education content for engineers breaking into Web 3 and smart contract
+                  development.
+                </p>
+              </div>
+            </a>
+          </motion.div>
 
           {/* SpaghettETH Card */}
-          <motion.a
+          <motion.div
             variants={itemVariants}
-            href="https://www.youtube.com/watch?v=sfmMcrbiX0c&ab_channel=DBlockEd"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col rounded-lg border bg-card transition-transform hover:scale-105"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="relative h-48">
-              <Image
-                src="/images/leadership/waku.png"
-                alt="Pranav Singhal Waku Protocol"
-                fill
-                className="rounded-t-lg object-cover"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <h4 className="mb-2 font-heading text-xl font-semibold">
-                Building Web-3 Powered Games Using Waku Protocol
-              </h4>
-              <p className="text-sm text-muted-foreground">2024</p>
-              <p className="text-sm">
-                A live-coding tutorial walking engineers through how to develop games using Waku
-                protocol, a decentralized messaging and data streaming protocol.
-              </p>
-            </div>
-          </motion.a>
+            <a
+              href="https://www.youtube.com/watch?v=sfmMcrbiX0c&ab_channel=DBlockEd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/waku.png"
+                  alt="Pranav Singhal Waku Protocol"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Building Web-3 Powered Games Using Waku Protocol
+                </h4>
+                <p className="text-sm text-muted-foreground">2024</p>
+                <p className="text-sm">
+                  A live-coding tutorial walking engineers through how to develop games using Waku
+                  protocol, a decentralized messaging and data streaming protocol.
+                </p>
+              </div>
+            </a>
+          </motion.div>
         </motion.div>
       </motion.div>
 
@@ -291,11 +307,11 @@ export function Leadership() {
               to over 10K users.{" "}
             </p>
             <p className="text-muted-foreground">
-              Before TalentLayer, Kirsten led the IEEE&apos;s Blockchain Governance Working Group
-              from 2018 to 2020, where over 200 open-source researchers contributed to research
-              around the governance of decentralized protocols. During that time, she also consulted
-              major enterprise blockchain projects including banking consortiums, blockchain as a
-              service companies, and more. Kirsten has been featured as a speaker on blockchain
+              Before TalentLayer, Kirsten led the IEEE's Blockchain Governance Working Group from
+              2018 to 2020, where over 200 open-source researchers contributed to research around
+              the governance of decentralized protocols. During that time, she also consulted major
+              enterprise blockchain projects including banking consortiums, blockchain as a service
+              companies, and more. Kirsten has been featured as a speaker on blockchain
               infrastructure design by the European Commission, Fedex Institute, Consensys, and many
               others.
             </p>
@@ -361,87 +377,103 @@ export function Leadership() {
           className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
           {/* SpaghettETH Card */}
-          <motion.a
+          <motion.div
             variants={itemVariants}
-            href="https://www.youtube.com/live/UtXlnHT7iY0?si=Psz1s0LEth3zmNf-&t=6276"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col rounded-lg border bg-card transition-transform hover:scale-105"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="relative h-48">
-              <Image
-                src="/images/leadership/eth-barcelona.png"
-                alt="Kirsten Pomales ETH Barcelona"
-                fill
-                className="rounded-t-lg object-cover"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <h4 className="mb-2 font-heading text-xl font-semibold">
-                Blockchain & the Future of Work Panel Discussion at ETH Barcelona
-              </h4>
-              <p className="text-sm text-muted-foreground">2023</p>
-              <p className="text-sm">
-                A panel discussion on how blockchian technology is powering work tech and how
-                innovative hiring patterns are being applied in Web 3.
-              </p>
-            </div>
-          </motion.a>
+            <a
+              href="https://www.youtube.com/live/UtXlnHT7iY0?si=Psz1s0LEth3zmNf-&t=6276"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/eth-barcelona.png"
+                  alt="Kirsten Pomales ETH Barcelona"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Blockchain & the Future of Work Panel Discussion at ETH Barcelona
+                </h4>
+                <p className="text-sm text-muted-foreground">2023</p>
+                <p className="text-sm">
+                  A panel discussion on how blockchian technology is powering work tech and how
+                  innovative hiring patterns are being applied in Web 3.
+                </p>
+              </div>
+            </a>
+          </motion.div>
 
           {/* European Commission Card */}
-          <a
-            href="https://youtu.be/iOsIE7Ap5s0?si=O9vJl4rnvlY4irA4&t=293"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col rounded-lg border bg-card transition-transform hover:scale-105"
+          <motion.div
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="relative h-48">
-              <Image
-                src="/images/projects/spaghetteth.png"
-                alt="Blockchian Applications Kirsten Pomales"
-                fill
-                className="rounded-t-lg object-cover"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <h4 className="mb-2 font-heading text-xl font-semibold">
-                Introduction to Open Graph Networks and TalentLayer Protocol
-              </h4>
-              <p className="text-sm text-muted-foreground">2022</p>
-              <p className="text-sm pt-2">
-                A technical workshop at SpaghettETH, reviewing the archetecture of open graph
-                networks like TalentLayer, a protocol for building marketplaces.
-              </p>
-            </div>
-          </a>
+            <a
+              href="https://youtu.be/iOsIE7Ap5s0?si=O9vJl4rnvlY4irA4&t=293"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/projects/spaghetteth.png"
+                  alt="Blockchian Applications Kirsten Pomales"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Introduction to Open Graph Networks and TalentLayer Protocol
+                </h4>
+                <p className="text-sm text-muted-foreground">2023</p>
+                <p className="text-sm pt-2">
+                  A technical workshop at SpaghettETH, reviewing the archetecture of open graph
+                  networks like TalentLayer, a protocol for building marketplaces.
+                </p>
+              </div>
+            </a>
+          </motion.div>
 
           {/* Saintgits Card */}
-          <motion.a
+          <motion.div
             variants={itemVariants}
-            href="https://www.youtube.com/live/vc8DwKCiHmw?si=BIudeOtopaHDlTfK&t=65"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-col rounded-lg border bg-card transition-transform hover:scale-105"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
           >
-            <div className="relative h-48">
-              <Image
-                src="/images/leadership/saintgits.jpg"
-                alt="Kirsten Pomales Saintgits University"
-                fill
-                className="rounded-t-lg object-cover"
-              />
-            </div>
-            <div className="flex flex-1 flex-col p-6">
-              <h4 className="mb-2 font-heading text-xl font-semibold">
-                Blockchain Applications Workshop at Saintgits University
-              </h4>
-              <p className="mb-2 text-sm text-muted-foreground">2020</p>
-              <p className="text-sm">
-                A 6 day workshop educating engineering students on fundamentals of building
-                blockchain-based systems in partnership with Saintgits University in Kerala, India.
-              </p>
-            </div>
-          </motion.a>
+            <a
+              href="https://www.youtube.com/live/vc8DwKCiHmw?si=BIudeOtopaHDlTfK&t=65"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/prague.png"
+                  alt="Kirsten Pomales TalentLayer ETH Prague"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Build Uncensorable & Privacy Preserving Work Platforms with TalentLayer SDK
+                </h4>
+                <p className="mb-2 text-sm text-muted-foreground">2023</p>
+                <p className="text-sm">
+                  A technical workshop on how to build decentralized marketplaces - alternatives to
+                  apps like Uber, Italki, Deliveroo, and others - using TalentLayer SDK.
+                </p>
+              </div>
+            </a>
+          </motion.div>
         </motion.div>
       </motion.div>
     </motion.div>
