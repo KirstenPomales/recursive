@@ -23,7 +23,7 @@ export function Header() {
           <NavItem href="/leadership" label="About Us" />
           <NavItem href="/projects" label="Our Work" />
           <NavItem href="/tooling" label="Venture Tools" />
-          <NavItem href="/careers" label="Join our Guild" />
+          <NavItem href="/leadership#joinus" label="Join our Guild" />
         </nav>
         <div className="hidden items-center gap-2 lg:flex">
           <Button asChild>

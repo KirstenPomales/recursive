@@ -3,10 +3,8 @@
 import { motion } from "framer-motion";
 
 import { CarouselTestimonialCard } from "@/components/carousel-testimonial-card";
-import {
-  Carousel,
-  CarouselContent
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent } from "@/components/ui/carousel";
+import { CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 
 export function Testimonials() {
   return (
@@ -29,7 +27,7 @@ export function Testimonials() {
         We&apos;ve collaborated with dozens of teams building and financing future-proof technology.
       </p>
       <Carousel opts={{ align: "start", loop: true }} className="mt-6 w-full px-4 xl:px-0">
-        {/* <CarouselPrevious className="-left-6 size-7 xl:-left-12 xl:size-8" /> */}
+        <CarouselPrevious className="-left-6 sm:hidden size-7 xl:-left-12 xl:size-8" />
         <CarouselContent className="pb-4">
           {/* <CarouselTestimonialCard
             name="Someone Important"
@@ -64,7 +62,7 @@ export function Testimonials() {
             text="Suspendisse a velit elit. Curabitur augue libero, vulputate sed dui id, sodales venenatis sem. Suspendisse dapibus neque eu justo volutpat gravida."
           /> */}
         </CarouselContent>
-        {/* <CarouselNext className="-right-6 size-7 xl:-right-12 xl:size-8" /> */}
+        <CarouselNext className="-right-6 sm:hidden size-7 xl:-right-12 xl:size-8" />
       </Carousel>
     </section>
   );

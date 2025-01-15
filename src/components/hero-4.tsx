@@ -8,13 +8,16 @@ import { Button } from "@/components/ui/button";
 
 export function Hero4() {
   return (
-    <section className="container flex flex-col items-center gap-10 pb-28 pt-20 sm:gap-14 lg:flex-row">
-      <div className="flex flex-1 flex-col items-center gap-8 lg:items-start lg:gap-10">
+    <section
+      id="joinus"
+      className="container flex flex-col items-center gap-10 pb-28 pt-20 sm:gap-14 lg:flex-row"
+    >
+      <div className="flex flex-1 flex-col items-left sm:items-center gap-8 lg:items-start lg:gap-10">
         <motion.h1
           animate={{ y: 0, opacity: 1 }}
           initial={{ y: 10, opacity: 0 }}
           transition={{ delay: 0, duration: 0.4 }}
-          className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
+          className="text-balance font-bold font-heading text-4xl tracking-tight sm:text-5xl lg:text-6xl"
         >
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
             join{" "}
@@ -23,45 +26,34 @@ export function Hero4() {
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
             guild
           </span>
-          <div className="mb-5 flex max-w-xs flex-wrap">
-            <Image
-              src="/images/they-glow.png"
-              alt="Image"
-              width={500}
-              height={500}
-              className="max-w-1/2 mt-5  h-auto  w-1/2 object-contain"
-            />
-          </div>
+        </motion.h1>
+        <div className="mb-5 flex max-w-xs flex-wrap">
+          <Image
+            src="/images/they-glow.png"
+            alt="Image"
+            width={500}
+            height={500}
+            className="max-w-1/2 mt-5  h-auto  w-1/2 object-contain"
+          />
+        </div>
+        <div className="text-balance text-4xl tracking-tight sm:text-5xl lg:text-6xl">
           <p className="max-w-md text-lg text-muted-foreground lg:text-left">
-            Recursive Studios was founded by
-            <a
-              href="https://www.linkedin.com/in/singhalpranav/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary"
-            >
-              &nbsp;Pranav&nbsp;
-            </a>
-            and
-            <a
-              href="https://www.linkedin.com/in/kirstenpomales/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary"
-            >
-              &nbsp; Kirsten&nbsp;
-            </a>
-            to solve real-world problems using web3 tech. They&apos;ve each been building in the
-            blockchain space for the past 7 years - leading VC-backed startups, building deep
-            protocol infra, and growing open-source communities. Together, they lead the team behind
-            Recursive.{" "}
+            <a className="font-bold">
+              Do you want to solve real-world problems with blockchain tech?
+            </a>{" "}
+            The guild of engineers behind Recursive learns together, builds together, and challenges
+            eachother to build solutions to web3&apos;s biggest challenges.
           </p>
           <p className="mt-5 max-w-md text-lg text-muted-foreground lg:text-left">
-            If you&apos;re an independent product designer or engineer seeking a community that
-            tackles interesting tech problems together, let&apos;s connect. We&apos;re remote
-            native, and freedom first. LFG.
+            We have open-source in our blood: as active OS contributors and leaders, we contribute
+            code and as a team.
           </p>
-        </motion.h1>
+          <p className="mt-5 max-w-md text-lg text-muted-foreground lg:text-left">
+            If you&apos;re an independent product designer or engineer seeking good vibes and your
+            next challenge, let&apos;s connect. We&apos;re remote native, and freedom first.
+          </p>
+          <p className="mt-5 max-w-md text-lg text-muted-foreground lg:text-left">LFG.</p>
+        </div>
         <div className="grid grid-cols-2 gap-3">
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
             <Link href="https://t.me/hellokirsten" target="_blank">
