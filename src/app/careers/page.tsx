@@ -1,13 +1,14 @@
-import { Header3 } from "@/components/header-3";
+import { Header } from "@/components/header";
 import { Hero4 } from "@/components/hero-4";
-import { Footer3 } from "@/components/footer-3";
+import { Footer } from "@/components/footer";
+import { Projects } from "@/components/projects";
 
 export default function CareersPage() {
   return (
     <>
-      <Header3 />
+      <Header />
       <Hero4 />
-      <Footer3 />
+      <Footer />
     </>
   );
 }

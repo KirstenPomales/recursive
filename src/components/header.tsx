@@ -19,15 +19,16 @@ export function Header() {
     >
       <Logo className="max-w-48 sm:max-w-xs" />
       <div className="flex items-center gap-10">
-        <nav className="hidden items-center justify-end gap-10 md:flex">
-          <NavItem href="/" label="About" />
+        <nav className="hidden items-center justify-end gap-10 lg:flex">
+          <NavItem href="/leadership" label="About Us" />
+          <NavItem href="/projects" label="Our Work" />
           <NavItem href="/tooling" label="Venture Tools" />
-          <NavItem href="/careers" label="Careers" />
+          <NavItem href="/leadership#joinus" label="Join our Guild" />
         </nav>
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <Button asChild>
-            <Link href="#" className="cursor-pointer">
-              Get Started
+            <Link href="https://cal.com/recursive" target="_blank" className="cursor-pointer">
+              Schedule a Call
             </Link>
           </Button>
         </div>
@@ -35,9 +36,11 @@ export function Header() {
       <MobileNavbar>
         <div className="container rounded-b-lg bg-background py-4 text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
-            <MobileNavItem href="/" label="About" />
+            <MobileNavItem href="/leadership" label="About Us" />
+            <MobileNavItem href="/projects" label="Our Work" />
             <MobileNavItem href="/tooling" label="Venture Tools" />
-            <MobileNavItem href="/careers" label="Careers" />
+            <MobileNavItem href="/careers" label="Join our Guild" />
+
             <Button size="lg" asChild className="mt-2 w-full">
               <Link href="#" className="cursor-pointer">
                 Contact Us

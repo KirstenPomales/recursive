@@ -13,7 +13,7 @@ interface FeatureItemProps {
 export function FeatureItem({ title, description, icon: Icon, className }: FeatureItemProps) {
   return (
     <div className={cn("flex items-center gap-4", className)}>
-      <div className="bg-secondary text-primary shrink-0 size-16 flex items-center justify-center rounded-[1rem]">
+      <div className="bg-secondary text-primary shrink-0 size-16 flex items-center justify-center rounded-2xl">
         <Icon size={29} />
       </div>
       <div className="flex flex-col gap-2">
