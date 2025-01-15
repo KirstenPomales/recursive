@@ -6,14 +6,44 @@ import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
 
 export function Leadership() {
+  // Add container variants for staggered children
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  // Add item variants for individual elements
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <div className="container mx-auto px-4 py-12">
+    <motion.div
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+      className="container mx-auto px-4 py-12"
+    >
       {/* Hero Section */}
-      <div className="flex flex-1 flex-col items-center gap-8 lg:items-start lg:gap-10">
+      <motion.div
+        variants={itemVariants}
+        className="flex flex-1 flex-col items-center gap-8 lg:items-start lg:gap-10"
+      >
         <motion.h1
-          animate={{ y: 0, opacity: 1 }}
-          initial={{ y: 10, opacity: 0 }}
-          transition={{ delay: 0, duration: 0.4 }}
+          variants={itemVariants}
           className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
           over&nbsp;
@@ -25,7 +55,7 @@ export function Leadership() {
             crypto native products
           </span>
         </motion.h1>
-        <p className="text-lg text-muted-foreground lg:text-left">
+        <motion.p variants={itemVariants} className="text-lg text-muted-foreground lg:text-left">
           Recursive Studios was founded by
           <a href="/leadership#pranav" className="text-primary">
             &nbsp;Pranav&nbsp;
@@ -36,23 +66,24 @@ export function Leadership() {
           </a>
           to solve real-world problems using web3 tech. Now, they lead a team of engineers tackling
           the biggest challenges in crypto.{" "}
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
       {/* Leader Profile Section */}
-      <div
+      <motion.div
+        variants={itemVariants}
         id="pranav"
         className="mt-16 flex flex-col items-center lg:flex-row lg:items-start lg:gap-24"
       >
-        <div className="relative mb-8 size-[250px] shrink-0 lg:mb-0">
+        <motion.div variants={itemVariants} className="relative mb-8 size-[250px] shrink-0 lg:mb-0">
           <Image
             src="/images/pranav-glow.png"
             alt="Pranav Singhal Recursive"
             fill
             className="rounded-2xl object-cover"
           />
-        </div>
-        <div className="flex flex-col gap-6">
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex flex-col gap-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-left">Pranav Singhal, Partner</h2>
           <div className="flex gap-2">
             <Badge>Developer</Badge>
@@ -129,15 +160,21 @@ export function Leadership() {
               </a>
             </Button>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Speaking Engagements Section */}
-      <div className="mt-16">
-        <h3 className="mb-8 text-2xl font-bold">Featured Content</h3>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div variants={itemVariants} className="mt-16">
+        <motion.h3 variants={itemVariants} className="mb-8 text-2xl font-bold">
+          Featured Content
+        </motion.h3>
+        <motion.div
+          variants={containerVariants}
+          className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+        >
           {/* ETH Lisbon Card */}
-          <a
+          <motion.a
+            variants={itemVariants}
             href="https://github.com/pranav-singhal/create-dapp-kit#readme"
             target="_blank"
             rel="noopener noreferrer"
@@ -156,15 +193,16 @@ export function Leadership() {
                 Web 3 Boiler Plate | Open-Source App Starter Codebase
               </h4>
               <p className="text-sm text-muted-foreground">2025</p>
-              <p className="text-sm pt-2">
+              <p className="text-sm">
                 While cursor is amazing for development, bootstrapping web3 projects can be tricky.
                 This boilerplate is Pranav&apos;s go-to for building DAPPs fast.
               </p>
             </div>
-          </a>
+          </motion.a>
 
           {/* European Commission Card */}
-          <a
+          <motion.a
+            variants={itemVariants}
             href="https://www.dblocked.io/"
             target="_blank"
             rel="noopener noreferrer"
@@ -183,15 +221,16 @@ export function Leadership() {
                 DBlock Ed, a Blockchian Developer Bootcamp
               </h4>
               <p className="text-sm text-muted-foreground">2024</p>
-              <p className="text-sm pt-2">
+              <p className="text-sm">
                 Pranav is a founder and educator at DBlock Ed, where he produces technical education
                 content for engineers breaking into Web 3 and smart contract development.
               </p>
             </div>
-          </a>
+          </motion.a>
 
           {/* SpaghettETH Card */}
-          <a
+          <motion.a
+            variants={itemVariants}
             href="https://www.youtube.com/watch?v=sfmMcrbiX0c&ab_channel=DBlockEd"
             target="_blank"
             rel="noopener noreferrer"
@@ -210,29 +249,30 @@ export function Leadership() {
                 Building Web-3 Powered Games Using Waku Protocol
               </h4>
               <p className="text-sm text-muted-foreground">2024</p>
-              <p className="text-sm pt-2">
+              <p className="text-sm">
                 A live-coding tutorial walking engineers through how to develop games using Waku
                 protocol, a decentralized messaging and data streaming protocol.
               </p>
             </div>
-          </a>
-        </div>
-      </div>
+          </motion.a>
+        </motion.div>
+      </motion.div>
 
       {/* Leader Profile Section */}
-      <div
+      <motion.div
+        variants={itemVariants}
         id="kirsten"
         className="mt-24 flex flex-col items-center lg:flex-row lg:items-start lg:gap-10"
       >
-        <div className="relative mb-8 size-[300px] shrink-0 lg:mb-0">
+        <motion.div variants={itemVariants} className="relative mb-8 size-[300px] shrink-0 lg:mb-0">
           <Image
             src="/images/kirsten-glow.png"
             alt="Kirsten"
             fill
             className="rounded-2xl object-contain"
           />
-        </div>
-        <div className="flex flex-col gap-6">
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex flex-col gap-6">
           <h2 className="text-2xl sm:text-3xl font-bold text-left">Kirsten Pomales, Partner</h2>
           <div className="flex gap-2">
             <Badge>Developer</Badge>
@@ -308,15 +348,21 @@ export function Leadership() {
               </a>
             </Button>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Speaking Engagements Section */}
-      <div className="mt-16">
-        <h3 className="mb-8 text-2xl font-bold">Featured Content</h3>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div variants={itemVariants} className="mt-16">
+        <motion.h3 variants={itemVariants} className="mb-8 text-2xl font-bold">
+          Featured Content
+        </motion.h3>
+        <motion.div
+          variants={containerVariants}
+          className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+        >
           {/* SpaghettETH Card */}
-          <a
+          <motion.a
+            variants={itemVariants}
             href="https://www.youtube.com/live/UtXlnHT7iY0?si=Psz1s0LEth3zmNf-&t=6276"
             target="_blank"
             rel="noopener noreferrer"
@@ -335,12 +381,12 @@ export function Leadership() {
                 Blockchain & the Future of Work Panel Discussion at ETH Barcelona
               </h4>
               <p className="text-sm text-muted-foreground">2023</p>
-              <p className="text-sm pt-2">
+              <p className="text-sm">
                 A panel discussion on how blockchian technology is powering work tech and how
                 innovative hiring patterns are being applied in Web 3.
               </p>
             </div>
-          </a>
+          </motion.a>
 
           {/* European Commission Card */}
           <a
@@ -370,7 +416,8 @@ export function Leadership() {
           </a>
 
           {/* Saintgits Card */}
-          <a
+          <motion.a
+            variants={itemVariants}
             href="https://www.youtube.com/live/vc8DwKCiHmw?si=BIudeOtopaHDlTfK&t=65"
             target="_blank"
             rel="noopener noreferrer"
@@ -394,9 +441,9 @@ export function Leadership() {
                 blockchain-based systems in partnership with Saintgits University in Kerala, India.
               </p>
             </div>
-          </a>
-        </div>
-      </div>
-    </div>
+          </motion.a>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   );
 }

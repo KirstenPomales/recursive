@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Leadership } from "@/components/leadership";
 import { Hero4 } from "@/components/hero-4";
+import { CtaSectionLeader } from "@/components/cta-section-leader";
 
 export const metadata = {
   title: "Leadership | Our Team",
@@ -14,6 +15,7 @@ export default function LeadershipPage() {
       <Header />
       <Leadership />
       <Hero4 />
+      <CtaSectionLeader />
       <Footer />
     </main>
   );

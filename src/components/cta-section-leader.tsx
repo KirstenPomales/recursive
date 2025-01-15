@@ -6,7 +6,7 @@ import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 
-export function CtaSection() {
+export function CtaSectionLeader() {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -50,7 +50,8 @@ export function CtaSection() {
           variants={itemVariants}
           className="max-w-xl text-center text-lg text-primary-foreground/80"
         >
-          Schedule a call to discover how we can achieve your team&apos;s big vision, together.{" "}
+          Recursive Studios is a collective of the best engineering talent in deep tech. Let's
+          explore how we can help you achive your product goals in 2025.{" "}
         </motion.p>
         <motion.div variants={itemVariants} className="grid grid-cols-2 gap-3">
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
