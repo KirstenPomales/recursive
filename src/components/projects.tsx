@@ -90,20 +90,24 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Mr. Fox</h2>
+            <h2 className="font-heading text-2xl font-semibold">TalentLayer</h2>
             <p className="text-muted-foreground">
-              An intent based chatbot that can execute transactions in a non-custodial way.
+              A decentralized and censorship resistant infrastructure for building service
+              marketplaces; ride-share apps, freelance platforms, and more. A comprehensive SDK and
+              developer toolkit enabling platforms to easily integrate.
             </p>
             <div className="flex gap-2">
-              <Badge>AI Agents</Badge>
-              <Badge variant="secondary">DAPP</Badge>
-              <Badge variant="outline">EVM</Badge>
+              <Badge>Protocol Network</Badge>
+              <Badge variant="secondary">Marketplace</Badge>
+
+              <Badge variant="outline">SDK</Badge>
+              <Badge>API</Badge>
             </div>
           </div>
           <div className="relative h-[200px] w-full md:w-[300px]">
             <Image
-              src="/images/projects/mister-fox.jpeg"
-              alt="E-commerce Redesign Project"
+              src="/images/projects/talentlayer.jpg"
+              alt="talentlayer protocol kirsten pomales"
               fill
               className="rounded-lg object-cover"
             />
@@ -153,24 +157,20 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Freelance Search</h2>
+            <h2 className="font-heading text-2xl font-semibold">Mr. Fox</h2>
             <p className="text-muted-foreground">
-              An AI agent that reads real-time web data from the world’s top freelance marketplaces,
-              and allows users to run detailed search over 1 million jobs. An API that opens up
-              access to this data to 3rd party apps.
+              An intent based chatbot that can execute transactions in a non-custodial way.
             </p>
             <div className="flex gap-2">
               <Badge>AI Agents</Badge>
-              <Badge variant="secondary">API</Badge>
-
-              <Badge variant="outline">Chrome Plugin</Badge>
-              <Badge>Web Scraping</Badge>
+              <Badge variant="secondary">DAPP</Badge>
+              <Badge variant="outline">EVM</Badge>
             </div>
           </div>
           <div className="relative h-[200px] w-full md:w-[300px]">
             <Image
-              src="/images/projects/freelancesearch.png"
-              alt="chatgpt plugin ai agent by recursive studio"
+              src="/images/projects/mister-fox.jpeg"
+              alt="E-commerce Redesign Project"
               fill
               className="rounded-lg object-cover"
             />
@@ -202,6 +202,39 @@ export function Projects() {
             />
           </div>
         </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
+          variants={item}
+        >
+          <div className="flex-1 space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">Freelance Search</h2>
+            <p className="text-muted-foreground">
+              An AI agent that reads real-time web data from the world’s top freelance marketplaces,
+              and allows users to run detailed search over 1 million jobs. An API that opens up
+              access to this data to 3rd party apps.
+            </p>
+            <div className="flex gap-2">
+              <Badge>AI Agents</Badge>
+              <Badge variant="secondary">API</Badge>
+
+              <Badge variant="outline">Chrome Plugin</Badge>
+              <Badge>Web Scraping</Badge>
+            </div>
+          </div>
+          <div className="relative h-[200px] w-full md:w-[300px]">
+            <Image
+              src="/images/projects/freelancesearch.png"
+              alt="chatgpt plugin ai agent by recursive studio"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.p className="text-center text-lg italic text-muted-foreground" variants={item}>
+          ...and many more
+        </motion.p>
       </motion.div>
     </motion.div>
   );
