@@ -41,7 +41,7 @@ export function AboutTeam() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      className="container flex flex-col items-center gap-10 pb-28 pt-10 sm:pt-20 sm:gap-14 lg:flex-row"
+      className="container flex flex-col items-center gap-10 pb-28 pt-10 sm:gap-14 sm:pt-20 lg:flex-row"
     >
       <div className="flex flex-1 flex-col items-center gap-8 lg:items-start lg:gap-10">
         <motion.div variants={itemVariants} className="mb-5 flex max-w-xs flex-wrap">
