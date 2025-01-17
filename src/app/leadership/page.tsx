@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Leadership } from "@/components/leadership";
 import { Hero4 } from "@/components/hero-4";
 import { CtaSectionLeader } from "@/components/cta-section-leader";
+import { HackathonsSection } from "@/components/hackathons-section";
 
 export const metadata = {
   title: "Leadership | Our Team",
@@ -14,6 +15,7 @@ export default function LeadershipPage() {
     <main className="flex-1">
       <Header />
       <Leadership />
+      <HackathonsSection />
       <Hero4 />
       <CtaSectionLeader />
       <Footer />

@@ -84,7 +84,7 @@ export function Leadership() {
           />
         </motion.div>
         <motion.div variants={itemVariants} className="flex flex-col gap-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-left">Pranav Singhal, Partner</h2>
+          <h2 className="text-left text-2xl font-bold sm:text-3xl">Pranav Singhal, Partner</h2>
           <div className="flex gap-2">
             <Badge>Developer</Badge>
             <Badge variant="secondary">Educator</Badge>
@@ -103,8 +103,12 @@ export function Leadership() {
               educator at DBlock Ed, a developer education network.
             </p>
             <p className="text-muted-foreground">
-              In addition to his work in web3, Pranav has built multiple ERP solutions for
-              large-scale businesses - helping them handle tens of millions worth of commerce.
+              In addition to his work in web3,{" "}
+              <a className="font-bold">
+                Pranav is well known for his work building ERP solutions for large-scale businesses
+                across India{" "}
+              </a>{" "}
+              - helping them handle tens of millions worth of commerce.
             </p>
             <p className="text-muted-foreground">
               Earlier in his career, Pranav was a senior engineer leading the Identity and Access
@@ -289,7 +293,7 @@ export function Leadership() {
           />
         </motion.div>
         <motion.div variants={itemVariants} className="flex flex-col gap-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-left">Kirsten Pomales, Partner</h2>
+          <h2 className="text-left text-2xl font-bold sm:text-3xl">Kirsten Pomales, Partner</h2>
           <div className="flex gap-2">
             <Badge>Developer</Badge>
             <Badge variant="secondary">VC Backed Founder</Badge>
@@ -434,7 +438,7 @@ export function Leadership() {
                   Introduction to Open Graph Networks and TalentLayer Protocol
                 </h4>
                 <p className="text-sm text-muted-foreground">2023</p>
-                <p className="text-sm pt-2">
+                <p className="pt-2 text-sm">
                   A technical workshop at SpaghettETH, reviewing the archetecture of open graph
                   networks like TalentLayer, a protocol for building marketplaces.
                 </p>
