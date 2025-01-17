@@ -39,7 +39,7 @@ export function Header() {
             <MobileNavItem href="/leadership" label="About Us" />
             <MobileNavItem href="/projects" label="Our Work" />
             <MobileNavItem href="/tooling" label="Venture Tools" />
-            <MobileNavItem href="/careers" label="Join our Guild" />
+            <MobileNavItem href="/leadership#joinus" label="Join our Guild" />
 
             <Button size="lg" asChild className="mt-2 w-full">
               <Link href="#" className="cursor-pointer">
