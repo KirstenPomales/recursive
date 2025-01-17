@@ -110,6 +110,28 @@ export function Features() {
           </Card>
         </motion.div>
       </motion.div>
+
+      <motion.div variants={itemVariants} className="mt-16 flex flex-col items-center gap-6">
+        <span className="text-center font-bold uppercase text-muted">Technologies we love</span>
+        <div className="grid grid-cols-4 items-center gap-8 sm:grid-cols-7">
+          {[
+            { name: "foundry", path: "/images/technologies/5.png" },
+            { name: "supabase", path: "/images/technologies/6.png" },
+            { name: "rust", path: "/images/technologies/7.png" },
+            { name: "ai16z eliza", path: "/images/technologies/1.png" },
+            { name: "Next.js", path: "/images/technologies/2.png" },
+            { name: "hacn", path: "/images/technologies/3.png" },
+            { name: "soldidity", path: "/images/technologies/4.png" },
+          ].map((tech) => (
+            <div
+              key={tech.name}
+              className="relative size-12 opacity-75 transition-opacity hover:opacity-100 sm:size-40"
+            >
+              <Image src={tech.path} alt={tech.name} fill className="object-contain" />
+            </div>
+          ))}
+        </div>
+      </motion.div>
     </motion.section>
   );
 }
