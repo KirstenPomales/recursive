@@ -50,12 +50,7 @@ export function HeroHackathons() {
             obsessed with building.{" "}
           </a>
         </motion.p>
-        <motion.h2 variants={item} className="text-2xl">
-          <a className="font-medium italic text-muted-foreground">
-            &quot;Hackathons give us hands-on experience with the latest in emerging tech - so we
-            can empower our clients with new innovations as they happen.&quot;
-          </a>
-        </motion.h2>
+
         <motion.div variants={item} className="grid grid-cols-2 gap-3">
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
             <Link href="/leadership">About Our Team</Link>

@@ -10,9 +10,9 @@ import { Card } from "@/components/ui/card";
 export function Hero4() {
   return (
     <section id="joinus" className="container pb-28 pt-20">
-      <Card className="bg-card p-12 sm:p-16">
+      <Card className="bg-card p-3 sm:p-16">
         <div className="flex flex-col items-center gap-10 p-8 sm:gap-14 lg:flex-row">
-          <div className="flex flex-1 flex-col gap-8 sm:items-center lg:items-start lg:gap-10">
+          <div className="flex flex-1 flex-col gap-8 lg:items-start lg:gap-10">
             <motion.h1
               animate={{ y: 0, opacity: 1 }}
               initial={{ y: 10, opacity: 0 }}
