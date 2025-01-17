@@ -52,37 +52,12 @@ export function Features() {
 
       <motion.p
         variants={itemVariants}
-        className="max-w-xl text-balance text-center text-lg text-muted-foreground"
+        className="text-balance text-center text-lg text-muted-foreground"
       >
-        We&apos;ve worked with teams like yours to produce software that makes millions.
+        We&apos;ve worked with teams like yours to produce software that impacts millions.
       </motion.p>
 
       <motion.div variants={containerVariants} className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        <motion.div variants={itemVariants}>
-          <Card className="border-0">
-            <CardContent className="flex flex-col gap-4 bg-background p-6">
-              <div className="relative h-60">
-                <Image
-                  src="/images/3.png"
-                  alt="Image"
-                  fill
-                  className="h-auto w-full object-contain"
-                />
-              </div>
-              <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
-                Venture Firms
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                We build tools that help crypto VC firms manage their portfolios and understand
-                token unlocks in real-time.
-              </p>
-              <Button className="mr-auto cursor-pointer">
-                <Link href="/tooling">Learn More</Link>
-              </Button>
-            </CardContent>
-          </Card>
-        </motion.div>
-
         <motion.div variants={itemVariants}>
           <Card className="border-0">
             <CardContent className="flex flex-col gap-4 border-0 bg-background p-6">
@@ -105,6 +80,30 @@ export function Features() {
                 <Link href="https://cal.com/recursive" target="_blank">
                   Schedule a Call
                 </Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </motion.div>
+        <motion.div variants={itemVariants}>
+          <Card className="border-0">
+            <CardContent className="flex flex-col gap-4 bg-background p-6">
+              <div className="relative h-60">
+                <Image
+                  src="/images/3.png"
+                  alt="Image"
+                  fill
+                  className="h-auto w-full object-contain"
+                />
+              </div>
+              <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
+                Venture Firms
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                We build tools that help crypto VC firms manage their portfolios and understand
+                token unlocks in real-time.
+              </p>
+              <Button className="mr-auto cursor-pointer">
+                <Link href="/tooling">Learn More</Link>
               </Button>
             </CardContent>
           </Card>

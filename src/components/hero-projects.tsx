@@ -34,18 +34,18 @@ export function HeroProjects() {
           variants={item}
           className="text-balance font-heading text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
         >
-          over&nbsp;
+          turning&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
-            7 years{" "}
+            visions{" "}
           </span>
-          experience building&nbsp;
+          into&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
-            crypto native products
+            reality
           </span>
         </motion.h1>
         <motion.p variants={item} className="text-lg text-muted-foreground">
-          Recursive Studios leadership has helped teams ranging from enterprise blockchain consortia
-          and defi startups to crypto-native venture firms and NFT marketplaces.
+          Recursive Studios team has build solutions for teams ranging from enterprise blockchain
+          consortia and defi startups to crypto-native venture firms and NFT marketplaces.
         </motion.p>
         <motion.div variants={item} className="grid grid-cols-2 gap-3">
           <Button size="lg" variant="outline" asChild className="cursor-pointer border-border">
