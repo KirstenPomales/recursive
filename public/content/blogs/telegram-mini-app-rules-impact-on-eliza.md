@@ -7,7 +7,7 @@ coverImage: "/blog/images/eliza-telegram.png"
 readingTime: 8
 ---
 
-# New Telegram Mini App Rules Will Ban Most Eliza Agents on February 21st: How to Save Your Agent!
+## New Telegram Mini App Rules Will Ban Most Eliza Agents on February 21st: How to Save Your Agent!
 
 On January 21st Telegram announced strict new policies on Mini Apps that use blockchain technology, requiring exclusive integration with the TON blockchain. 
 

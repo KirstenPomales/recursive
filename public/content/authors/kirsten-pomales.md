@@ -1,6 +1,6 @@
 ---
 name: "Kirsten Pomales"
-bio: "Developer and opensource enthusiast. Leading a guild building apps at the intersection of AI and crypto."
+bio: "Partner at Recursive. Developer and opensource advocate."
 avatar: "/blog/images/recursive-kp.png"
 socials:
   twitter: "https://twitter.com/kirstenrpomales"
