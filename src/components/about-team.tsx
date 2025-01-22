@@ -95,8 +95,8 @@ export function AboutTeam() {
           >
             &nbsp;Kirsten&nbsp;
           </motion.a>
-          to solve real-world problems using web3 tech. Now, they lead a team of developers building
-          powerful open-source software and helping web 3 startups scale engineering.{" "}
+          to solve real-world problems using web3 and AI tech. Now, they lead a team of developers
+          building powerful open-source software and helping startups scale engineering.{" "}
         </motion.p>
 
         <motion.div variants={itemVariants} className="grid grid-cols-2 gap-3">
