@@ -1,5 +1,5 @@
 ---
-title: "How to Save Your Eliza Agent From New Telegram App Rules"
+title: "How to Save Your Eliza Agent: New Rules to Avoid Blacklisting on Telegram"
 description: "Important updates about Telegram's new blockchain policies and how they affect Eliza agents"
 date: "2025-01-22"
 author: "kirsten-pomales"
