@@ -34,7 +34,7 @@ In recent weeks, Eliza agents have made it incredibly easy to use non-TON blockc
 While this policy protects Telegram's blockchain interests, it disrupts innovation by forcing developers to comply or risk bans...
 
 ![Telegram Ban Message](/blog/images/ban.jpeg)
-We got this message on February 21st.
+*We got this message on February 21st.*
 
 ## What This Means for Eliza Developers
 
@@ -104,4 +104,4 @@ The stakes are high: failure to comply will lead to bans and disruption.
 
 Take action now—audit your bots, remove non-compliant features, and ensure your work aligns with these new policies.
 
-If you need help, feel free to [Message me](https://t.me/hellokirsten). The Recursive team has experience building Telegram Mini Apps, Eliza Agents, and TON apps. We're around to help teams make their apps compliant and transition smart contracts and logic to the TON blockchain. 
+If you need help, feel free to [Message me](https://t.me/hellokirsten). The Recursive team has experience building Telegram Mini Apps, Eliza Agents, and TON apps and we've got some strategies in the works for how to keep our agents(and yours) out of trouble. 
