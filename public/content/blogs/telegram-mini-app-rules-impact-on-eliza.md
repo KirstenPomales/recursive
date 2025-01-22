@@ -4,7 +4,7 @@ description: "Important updates about Telegram's new blockchain policies and how
 date: "2025-01-22"
 author: "kirsten-pomales"
 coverImage: "/blog/images/eliza-telegram.png"
-readingTime: 8
+readingTime: 5
 ---
 
 ## New Telegram Mini App Rules Will Ban Most Eliza Agents on February 21st: How to Save Your Agent!

@@ -1,6 +1,6 @@
 ---
 title: "Eliza vs Virtuals: Where to Deploy Your On-Chain Agent"
-description: "A comparison of two leading on-chain AI agent frameworks from a technical, business, and community perspective."
+description: "A comparison of two leading on-chain AI agent frameworks from a a technical and business perspective."
 date: "2025-01-02"
 author: "kirsten-pomales"
 coverImage: "/blog/images/virtuals-eliza.png"
