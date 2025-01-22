@@ -1,9 +1,9 @@
 ---
 name: "Pranav Singhal"
-bio: "Full-stack developer and blockchain enthusiast. Building the future of web3 infrastructure."
-avatar: "/blog/images/pranav-avatar.jpg"
+bio: "Full-stack developer and blockchain enthusiast. Building infra and apps at the intersection of crypto & AI."
+avatar: "/blog/images/recursive-ps.png"
 socials:
-  twitter: "https://twitter.com/pranavsinghal"
+  twitter: "https://x.com/_pranav_singhal"
   github: "https://github.com/pranav-singhal"
-  linkedin: "https://linkedin.com/in/pranav-singhal"
+  linkedin: "https://www.linkedin.com/in/singhalpranav/"
 --- 
