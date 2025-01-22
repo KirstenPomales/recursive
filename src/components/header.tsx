@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { Logo } from "@/components/logo";
+import { MobileNavItem } from "@/components/mobile-nav-item";
+import { MobileNavbar } from "@/components/mobile-navbar";
 import { NavItem } from "@/components/nav-item";
 import { Button } from "@/components/ui/button";
-import { MobileNavbar } from "@/components/mobile-navbar";
-import { MobileNavItem } from "@/components/mobile-nav-item";
 
 export function Header() {
   return (
@@ -23,6 +23,7 @@ export function Header() {
           <NavItem href="/leadership" label="About Us" />
           <NavItem href="/projects" label="Our Work" />
           <NavItem href="/tooling" label="Venture Tools" />
+          <NavItem href="/blog" label="Blog" />
           <NavItem href="/leadership#joinus" label="Join our Guild" />
         </nav>
         <div className="hidden items-center gap-2 lg:flex">
@@ -39,6 +40,7 @@ export function Header() {
             <MobileNavItem href="/leadership" label="About Us" />
             <MobileNavItem href="/projects" label="Our Work" />
             <MobileNavItem href="/tooling" label="Venture Tools" />
+            <MobileNavItem href="/blog" label="Blog" />
             <MobileNavItem href="/leadership#joinus" label="Join our Guild" />
 
             <Button size="lg" asChild className="mt-2 w-full">
