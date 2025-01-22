@@ -90,9 +90,8 @@ If you need help with this, our team has been building Telegram Mini Apps and El
 
 ## Deadlines to Watch
 
-- **January 21, 2025:** All new blockchain assets must adhere to TON-only rules.
-- **February 1, 2025:** Compliance required for Mini Apps under Clauses 7.1–7.4.
-- **February 21, 2025:** Final deadline for existing Mini Apps to migrate to TON.
+- **January 21, 2025:** All new TON apps must adhere to TON-only rules under Clauses 7.1–7.4 of the Telegram TOS.
+- **February 21, 2025:** Final deadline for existing Mini Apps to migrate to TON. Compliance enforcement begins.
 
 ## Final Thoughts
 
