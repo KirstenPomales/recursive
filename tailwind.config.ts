@@ -106,6 +106,15 @@ const config = {
                 opacity: 0.8,
               },
             },
+            code: {
+              color: "hsl(var(--secondary))",
+              "&::before": {
+                content: '""',
+              },
+              "&::after": {
+                content: '""',
+              },
+            },
           },
         },
       },
