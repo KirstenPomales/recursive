@@ -1,5 +1,5 @@
 ---
-title: "How to Save Your Eliza Agent From New Telegram App Rules"
+title: "How to Save Your Eliza Agent: New Rules to Avoid Blacklisting on Telegram"
 description: "Important updates about Telegram's new blockchain policies and how they affect Eliza agents"
 date: "2025-01-22"
 author: "kirsten-pomales"
@@ -102,5 +102,7 @@ While this limits flexibility, Eliza developers can adapt by shifting to regular
 The stakes are high: failure to comply will lead to bans and disruption.
 
 Take action now—audit your bots, remove non-compliant features, and ensure your work aligns with these new policies.
+
+PSA: This article is written based on the understanding I have of the new Telegram Terms of Service. As always, DYOR. 
 
 If you need help, feel free to [Message me](https://t.me/hellokirsten). The Recursive team has experience building Telegram Mini Apps, Eliza Agents, and TON apps and we've got some strategies in the works for how to keep our agents(and yours) out of trouble. 
