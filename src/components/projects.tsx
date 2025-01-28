@@ -90,24 +90,31 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">TalentLayer</h2>
+            <h2 className="font-heading text-2xl font-semibold">ai16z Eliza Zerion Plugin</h2>
             <p className="text-muted-foreground">
-              A decentralized and censorship resistant infrastructure for building service
-              marketplaces; ride-share apps, freelance platforms, and more. A comprehensive SDK and
-              developer toolkit enabling platforms to easily integrate.
+              A plugin that allows Eliza agents to access real-time wallet and token data across 14
+              blockchains.
             </p>
             <div className="flex gap-2">
-              <Badge>Protocol Network</Badge>
-              <Badge variant="secondary">Marketplace</Badge>
+              <Badge>AI Agents</Badge>
+              <Badge variant="secondary">API</Badge>
 
-              <Badge variant="outline">SDK</Badge>
-              <Badge>API</Badge>
+              <Badge variant="outline">ai16z Eliza</Badge>
             </div>
+            <Button asChild>
+              <Link
+                href="https://x.com/kirstenrpomales/status/1884244451721371833"
+                target="_blank"
+                className="cursor-pointer"
+              >
+                View Project
+              </Link>
+            </Button>
           </div>
           <div className="relative h-[200px] w-full md:w-[300px]">
             <Image
-              src="/images/projects/talentlayer.jpg"
-              alt="talentlayer protocol kirsten pomales"
+              src="/images/projects/ai16z-eliza-zerion-plugin.png"
+              alt="eliza ai agent ai16z zerion plugin recursive studio"
               fill
               className="rounded-lg object-cover"
             />
@@ -205,6 +212,35 @@ export function Projects() {
 
         <motion.div
           className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
+          variants={item}
+        >
+          <div className="flex-1 space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">TalentLayer</h2>
+            <p className="text-muted-foreground">
+              A decentralized and censorship resistant infrastructure for building service
+              marketplaces; ride-share apps, freelance platforms, and more. A comprehensive SDK and
+              developer toolkit enabling platforms to easily integrate.
+            </p>
+            <div className="flex gap-2">
+              <Badge>Protocol Network</Badge>
+              <Badge variant="secondary">Marketplace</Badge>
+
+              <Badge variant="outline">SDK</Badge>
+              <Badge>API</Badge>
+            </div>
+          </div>
+          <div className="relative h-[200px] w-full md:w-[300px]">
+            <Image
+              src="/images/projects/talentlayer.jpg"
+              alt="talentlayer protocol kirsten pomales"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
           variants={item}
         >
           <div className="flex-1 space-y-4">

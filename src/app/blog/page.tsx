@@ -18,7 +18,7 @@ export default function BlogPage() {
       <div className="container py-24">
         <div className="flex flex-col gap-3">
           <h1 className="font-heading text-4xl font-bold tracking-tight sm:text-5xl">the blog</h1>
-          <p className="text-muted-foreground max-w-2xl leading-normal sm:text-xl sm:leading-8">
+          <p className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
             Check out the latest updates and thoughts from the Recursive team.
           </p>
         </div>
