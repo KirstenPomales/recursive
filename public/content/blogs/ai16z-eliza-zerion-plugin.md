@@ -1,5 +1,5 @@
 ---
-title: "Video Tutorial: Building an ai16z Eliza Agent that Reads On-Chain Data with the Zerion Plugin"
+title: "Video Tutorial: Building an ai16z Eliza Agent that uses Zerion"
 description: "In this tutorial we will set up a basic Eliza agent let it read on-chian wallet and token data. "
 date: "2025-01-28"
 author: "kirsten-pomales"

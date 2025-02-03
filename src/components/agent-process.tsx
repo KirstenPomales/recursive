@@ -26,7 +26,7 @@ const itemVariants = {
   },
 };
 
-export function Features2() {
+export function AgentProcess() {
   return (
     <motion.section
       variants={containerVariants}
@@ -55,9 +55,9 @@ export function Features2() {
         variants={itemVariants}
         className="text-balance text-center text-lg text-muted-foreground"
       >
-        Recursive provides custom tailored portfolio management software for Web3 venture firms. Our
-        platforms streamline the way you track investments, manage token vesting schedules, and gain
-        real-time insights into your portfolio performance.
+        Recursive Studio provides custom tailored portfolio management software for Web3 venture
+        firms. Our platforms streamline the way you track investments, manage token vesting
+        schedules, and gain real-time insights into your portfolio performance.
       </motion.p>
 
       <motion.div variants={containerVariants} className="grid grid-cols-1 gap-4 md:grid-cols-3">
