@@ -1,9 +1,9 @@
-import { getAllBlogPosts } from "@/lib/blog";
 import { BlogCard } from "@/components/blog/blog-card";
+import { getAllPosts } from "@/lib/blog";
 
 export async function BlogSection() {
   // Get all posts and take the 3 most recent ones
-  const recentPosts = getAllBlogPosts().slice(0, 3);
+  const recentPosts = getAllPosts().slice(0, 3);
 
   return (
     <section className="container py-24">

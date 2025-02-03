@@ -2,7 +2,7 @@ import { BlogCard } from "@/components/blog/blog-card";
 import { CtaSection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import { getAllBlogPosts } from "@/lib/blog";
+import { getAllPosts } from "@/lib/blog";
 
 export const metadata = {
   title: "Blog | Recursive",
@@ -10,7 +10,7 @@ export const metadata = {
 };
 
 export default function BlogPage() {
-  const posts = getAllBlogPosts();
+  const posts = getAllPosts();
 
   return (
     <main className="flex-1">

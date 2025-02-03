@@ -39,19 +39,9 @@ export function getAllPosts() {
     return {
       slug,
       ...data,
-    } as {
-      slug: string;
-      title: string;
-      description: string;
-      date: string;
-      coverImage: string;
-      author: {
-        name: string;
-        image: string;
-      };
-      readingTime: string;
-    };
+    } as BlogPost;
   });
+  
 
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }

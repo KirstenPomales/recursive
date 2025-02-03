@@ -1,21 +1,11 @@
 import { BlogCard } from "@/components/blog/blog-card";
 import { AnimatedHeading } from "@/components/ui/animated-heading";
+import { BlogPost } from "@/lib/blog";
 
-interface Post {
-  slug: string;
-  title: string;
-  description: string;
-  date: string;
-  coverImage: string;
-  author: {
-    name: string;
-    image: string;
-  };
-  readingTime: string;
-}
+
 
 interface BlogHighlightProps {
-  featuredPosts: Post[];
+  featuredPosts: BlogPost[];
 }
 
 export function BlogHighlight({ featuredPosts }: BlogHighlightProps) {
