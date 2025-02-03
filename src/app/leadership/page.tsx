@@ -8,6 +8,24 @@ import { HackathonsSection } from "@/components/hackathons-section";
 export const metadata = {
   title: "Leadership | Our Team",
   description: "Meet our experienced leadership team driving innovation and success in web3.",
+  openGraph: {
+    title: "Recursive Studio's Leadership",
+    description: "Meet our experienced leadership team driving innovation and success in web3.",
+    images: [
+      {
+        url: "/images/og-image.jpg", // This should be a 1200x630px image
+        width: 1200,
+        height: 630,
+        alt: "Recursive Studio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recursive Studio's Leadership",
+    description: "Meet our experienced leadership team driving innovation and success in web3.",
+    images: ["/images/og-image.jpg"], // Same image as OG
+  },
 };
 
 export default function LeadershipPage() {

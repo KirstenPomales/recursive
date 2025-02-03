@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useState, useEffect } from "react";
 
 import { Logo } from "@/components/logo";
 import { MobileNavItem } from "@/components/mobile-nav-item";
@@ -10,6 +11,20 @@ import { NavItem } from "@/components/nav-item";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest(".dropdown-container")) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
+
   return (
     <motion.header
       animate={{ opacity: 1 }}
@@ -21,8 +36,54 @@ export function Header() {
       <div className="flex items-center gap-10">
         <nav className="hidden items-center justify-end gap-10 lg:flex">
           <NavItem href="/leadership" label="About Us" />
-          <NavItem href="/projects" label="Our Work" />
-          <NavItem href="/tooling" label="Venture Tools" />
+          <div className="dropdown-container relative">
+            <button
+              className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
+              Our Specialties
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={`transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
+              >
+                <path d="m6 9 6 6 6-6" />
+              </svg>
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute left-0 top-full mt-2 w-48 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5">
+                <div className="py-1">
+                  <Link
+                    href="/ai-agent-developer"
+                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                  >
+                    AI Agents
+                  </Link>
+                  <Link
+                    href="/tooling"
+                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                  >
+                    Venture Portfolio Management
+                  </Link>
+                  {/* <Link
+                    href="/mvp-development"
+                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                  >
+                    MVP Development
+                  </Link> */}
+                </div>
+              </div>
+            )}
+          </div>
+          <NavItem href="/projects" label="Prior Projects" />
+
           <NavItem href="/blog" label="Blog" />
           <NavItem href="/leadership#joinus" label="Join our Guild" />
         </nav>
@@ -38,8 +99,11 @@ export function Header() {
         <div className="container rounded-b-lg bg-background py-4 text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
             <MobileNavItem href="/leadership" label="About Us" />
-            <MobileNavItem href="/projects" label="Our Work" />
-            <MobileNavItem href="/tooling" label="Venture Tools" />
+            <div className="px-4 py-2 text-sm text-muted-foreground">Specialties</div>
+
+            <MobileNavItem href="/ai-agent-developer" label="Ai Agents" className="pl-8" />
+            <MobileNavItem href="/tooling" label="Venture Tools" className="pl-8" />
+
             <MobileNavItem href="/blog" label="Blog" />
             <MobileNavItem href="/leadership#joinus" label="Join our Guild" />
 

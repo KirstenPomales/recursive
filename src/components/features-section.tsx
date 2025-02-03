@@ -57,7 +57,32 @@ export function Features() {
         We&apos;ve worked with teams like yours to produce software that impacts millions.
       </motion.p>
 
-      <motion.div variants={containerVariants} className="grid grid-cols-1 gap-4 md:grid-cols-2">
+      <motion.div variants={containerVariants} className="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <motion.div variants={itemVariants}>
+          <Card className="border-0">
+            <CardContent className="flex flex-col gap-4 border-0 bg-background p-6">
+              <div className="relative h-60">
+                <Image
+                  src="/images/ai-agent-developer-eliza-1.png"
+                  alt="Image"
+                  fill
+                  className="float-left mb-4 mr-4 h-auto w-full object-contain"
+                />
+              </div>
+              <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
+                On-Chain AI Agents
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                We build custom AI agents, powered by blockchain; from customer support agents to
+                advanced trading agents.
+              </p>
+
+              <Button className="mr-auto cursor-pointer">
+                <Link href="/ai-agent-developer">Build Your Agent</Link>
+              </Button>
+            </CardContent>
+          </Card>
+        </motion.div>
         <motion.div variants={itemVariants}>
           <Card className="border-0">
             <CardContent className="flex flex-col gap-4 border-0 bg-background p-6">
@@ -70,7 +95,7 @@ export function Features() {
                 />
               </div>
               <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
-                Startups and Protocols
+                MVP Apps & Protocols
               </h3>
               <p className="text-sm text-muted-foreground">
                 We design and build full-stack DAPPs and apps, powered by the most modern frameworks
@@ -96,14 +121,14 @@ export function Features() {
                 />
               </div>
               <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
-                Venture Firms
+                Web 3 Venture Firms
               </h3>
               <p className="text-sm text-muted-foreground">
                 We build tools that help crypto VC firms manage their portfolios and understand
                 token unlocks in real-time.
               </p>
               <Button className="mr-auto cursor-pointer">
-                <Link href="/tooling">Learn More</Link>
+                <Link href="/tooling">Explore Venture Tools</Link>
               </Button>
             </CardContent>
           </Card>
@@ -112,7 +137,7 @@ export function Features() {
 
       <motion.div variants={itemVariants} className="mt-16 flex flex-col items-center gap-6">
         <span className="text-center font-bold uppercase text-muted">Technologies we love</span>
-        <div className="grid grid-cols-4 items-center gap-8 sm:grid-cols-7">
+        <div className="grid grid-cols-4 items-center md:grid-cols-7 md:gap-8">
           {[
             { name: "foundry", path: "/images/technologies/5.png" },
             { name: "supabase", path: "/images/technologies/6.png" },

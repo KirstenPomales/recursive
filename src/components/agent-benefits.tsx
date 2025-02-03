@@ -26,7 +26,7 @@ const itemVariants = {
   },
 };
 
-export function Features2() {
+export function AgentBenefits() {
   return (
     <motion.section
       variants={containerVariants}
@@ -36,17 +36,14 @@ export function Features2() {
       className="container flex flex-col items-center gap-6 py-24 sm:gap-7"
     >
       <motion.div variants={itemVariants} className="flex flex-col gap-3">
-        <span className="text-center font-bold uppercase text-muted">
-          spreadsheets are a silent killer
-        </span>
+        <span className="text-center font-bold uppercase text-muted">ai agent developer</span>
         <h2 className="text-balance text-center font-heading text-3xl font-bold tracking-tight md:text-5xl">
-          replace&nbsp;
-          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary line-through">
-            spreadsheets<br></br>
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
+            supercharged ai agents&nbsp;
           </span>
-          with&nbsp;
-          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
-            real-time insights
+          starting at&nbsp;
+          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary">
+            $10K
           </span>
         </h2>
       </motion.div>
@@ -55,28 +52,29 @@ export function Features2() {
         variants={itemVariants}
         className="text-balance text-center text-lg text-muted-foreground"
       >
-        Recursive provides custom tailored portfolio management software for Web3 venture firms. Our
-        platforms streamline the way you track investments, manage token vesting schedules, and gain
-        real-time insights into your portfolio performance.
+        Our team of former VC backed founders and engineers is here to help you spec, develop, and
+        test your AI agent - from idea to launch.
       </motion.p>
 
       <motion.div variants={containerVariants} className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {[
           {
-            image: "/images/vc/vc-multichart.png",
-            title: "Simplify Complex Investments",
-            description: "Track everything from SAFTs to token vesting schedules—automatically.",
-          },
-          {
-            image: "/images/vc/vc-column-detail.png",
-            title: "View Real-Time Insights",
+            image: "/images/q-and-a-agents.png",
+            title: "Q&A Agents",
             description:
-              "Get instant access to key metrics like IRR, staking returns, and equity dilution.",
+              "Agents that have a knowledge base on your product or community, and can answer customer questions directly",
           },
           {
-            image: "/images/vc/vc-list.png",
-            title: "Eliminate Spreadsheets",
-            description: "Say goodbye to manual errors and inconsistent data formats.",
+            image: "/images/ai-as-ui.png",
+            title: "AI as UI",
+            description:
+              "Agents that can help your users perform actions that they'd normally use an app for, in natural language",
+          },
+          {
+            image: "/images/crypto-agents.png",
+            title: "On-Chain Agents",
+            description:
+              "Agents that can read on-chain information and perform trades, NFT minting, and more on user's behalf",
           },
         ].map((card, index) => (
           <motion.div key={index} variants={itemVariants}>
@@ -102,6 +100,17 @@ export function Features2() {
           </motion.div>
         ))}
       </motion.div>
+
+      <motion.p
+        variants={itemVariants}
+        className="text-center text-base font-semibold italic text-muted-foreground md:text-xl"
+      >
+        powered by{" "}
+        <a href="https://www.elizaos.ai/" className="text-primary" target="_blank">
+          ElizaOS
+        </a>
+        , the leading on-chain ai agent framework
+      </motion.p>
     </motion.section>
   );
 }
