@@ -1,6 +1,6 @@
 ---
 title: "Introducing Ethers Query: React Hooks for Ethers.JS"
-description: "A comparison of two leading on-chain AI agent frameworks from a a technical and business perspective."
+description: "Ethers Query is a lightweight React hooks library built on top of ethers.js, making it easier to connect wallets, read smart contract data..."
 date: "2025-03-06"
 author: "kirsten-pomales"
 coverImage: "/blog/images/ethers-js-ethers-query.png"
