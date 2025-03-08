@@ -321,7 +321,16 @@ export function Leadership() {
               Kirsten has spent the past few years leading the team behind TalentLayer, a
               venture-backed protocol infrastructure for marketplaces. While at TalentLayer, Kirsten
               grew a large open-source community, recieved substantial EU grant funding, and scaled
-              to over 10K users.{" "}
+              to over 10K users. This open-source community ended up evolving into{" "}
+              <img
+                src="/images/talentlayer-raccoon-head.png"
+                alt="icon"
+                className="mx-1 inline-block size-4 align-text-bottom"
+              />{" "}
+              <a href="https://talentlayer.org" className="underline" target="_blank">
+                TalentLayer Guild
+              </a>{" "}
+              , the developer collective behind Recursive.{" "}
             </p>
             <p className="text-muted-foreground">
               Before TalentLayer, Kirsten led the IEEE&apos;s Blockchain Governance Working Group

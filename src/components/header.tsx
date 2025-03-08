@@ -99,16 +99,15 @@ export function Header() {
         <div className="container rounded-b-lg bg-background py-4 text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
             <MobileNavItem href="/leadership" label="About Us" />
-            <div className="px-4 py-2 text-sm text-muted-foreground">Specialties</div>
 
-            <MobileNavItem href="/ai-agent-developer" label="Ai Agents" className="pl-8" />
-            <MobileNavItem href="/tooling" label="Venture Tools" className="pl-8" />
-
+            <MobileNavItem href="/ai-agent-developer" label="AI Agents" />
+            <MobileNavItem href="/tooling" label="Venture Tools" />
+            <MobileNavItem href="/projects" label="Prior Projects" />
             <MobileNavItem href="/blog" label="Blog" />
             <MobileNavItem href="/leadership#joinus" label="Join our Guild" />
 
             <Button size="lg" asChild className="mt-2 w-full">
-              <Link href="#" className="cursor-pointer">
+              <Link href="https://cal.com/recursive" className="cursor-pointer">
                 Contact Us
               </Link>
             </Button>

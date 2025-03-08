@@ -43,9 +43,9 @@ export function Features() {
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
             specialists{" "}
           </span>
-          that&nbsp;
+          across&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
-            know your niche
+            EVM and SVM
           </span>
         </h2>
       </motion.div>

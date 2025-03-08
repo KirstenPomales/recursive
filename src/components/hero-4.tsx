@@ -41,8 +41,18 @@ export function Hero4() {
                 <a className="font-bold">
                   Do you want to solve real-world problems with blockchain tech?
                 </a>{" "}
-                The guild of engineers behind Recursive learns together, builds together, and
-                challenges eachother to build solutions to web3&apos;s biggest challenges.
+                Recursive is the agency wing of a guild of engineers that learns together, builds
+                together, and challenges eachother to build solutions to web3&apos;s biggest
+                challenges. Learn about{" "}
+                <img
+                  src="/images/talentlayer-raccoon-head.png"
+                  alt="icon"
+                  className="mx-1 inline-block size-4 align-text-bottom"
+                />{" "}
+                <a href="https://talentlayer.org" className="underline" target="_blank">
+                  TalentLayer Guild
+                </a>
+                .
               </p>
               <p className="mt-5 max-w-md text-lg text-muted-foreground lg:text-left">
                 We have open-source in our blood: as active OS contributors and leaders, we
