@@ -84,7 +84,7 @@ export function ProjectHighlight() {
             Eliza repo.{" "}
           </motion.p>
 
-          <motion.div className="grid grid-cols-2 gap-3">
+          <motion.div className="grid grid-cols-3 gap-3">
             <Button size="lg" asChild className="cursor-pointer">
               <Link href="https://x.com/kirstenrpomales/status/1884244451721371833" target="_blank">
                 Tutorial
@@ -98,6 +98,11 @@ export function ProjectHighlight() {
               >
                 <Github className="size-5" />
                 Github
+              </Link>
+            </Button>
+            <Button size="lg" variant="outline" asChild className="cursor-pointer">
+              <Link href="https://x.com/evgeth_/status/1884278818376175915" target="_blank">
+                ❤️ Testimonial
               </Link>
             </Button>
           </motion.div>
