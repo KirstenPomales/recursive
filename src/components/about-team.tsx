@@ -47,7 +47,7 @@ export function AboutTeam() {
         <motion.div variants={itemVariants} className="mb-5 flex max-w-xs flex-wrap">
           <motion.div variants={itemVariants}>
             <Image
-              src="/images/they-glow.png"
+              src="/images/they-all-glow.png"
               alt="Image"
               width={500}
               height={500}
@@ -65,7 +65,7 @@ export function AboutTeam() {
             variants={itemVariants}
             className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary"
           >
-            7 years{" "}
+            8 years{" "}
           </motion.span>
           experience building&nbsp;
           <motion.span
@@ -78,25 +78,19 @@ export function AboutTeam() {
 
         <motion.p variants={itemVariants} className="text-lg text-muted-foreground lg:text-left">
           Recursive Studios was founded by
-          <motion.a
-            variants={itemVariants}
-            href="/leadership#pranav"
-            rel="noopener noreferrer"
-            className="text-primary"
-          >
-            &nbsp;Pranav&nbsp;
-          </motion.a>
-          and
-          <motion.a
-            variants={itemVariants}
-            href="/leadership#kirsten"
-            rel="noopener noreferrer"
-            className="text-primary"
-          >
-            &nbsp;Kirsten&nbsp;
-          </motion.a>
-          to solve real-world problems using web3 and AI tech. Now, they lead a team of developers
-          building powerful open-source software and helping startups scale engineering.{" "}
+          <a href="/leadership#pranav" className="text-primary">
+            &nbsp;Pranav
+          </a>
+          ,
+          <a href="/leadership#kirsten" className="text-primary">
+            &nbsp; Kirsten
+          </a>
+          , and{" "}
+          <a href="/leadership#daniel" className="text-primary">
+            &nbsp;Daniel&nbsp;
+          </a>
+          to solve real-world problems using web3 tech. Now, they lead a team of developers building
+          powerful open-source software and helping startups scale engineering.{" "}
         </motion.p>
 
         <motion.div variants={itemVariants} className="grid grid-cols-2 gap-3">

@@ -48,7 +48,7 @@ export function Leadership() {
         >
           over&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
-            7 years{" "}
+            8 years{" "}
           </span>
           experience building&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
@@ -58,11 +58,15 @@ export function Leadership() {
         <motion.p variants={itemVariants} className="text-lg text-muted-foreground lg:text-left">
           Recursive Studios was founded by
           <a href="/leadership#pranav" className="text-primary">
-            &nbsp;Pranav&nbsp;
+            &nbsp;Pranav
           </a>
-          and
+          ,
           <a href="/leadership#kirsten" className="text-primary">
-            &nbsp; Kirsten&nbsp;
+            &nbsp; Kirsten
+          </a>
+          , and{" "}
+          <a href="/leadership#daniel" className="text-primary">
+            &nbsp;Daniel&nbsp;
           </a>
           to solve real-world problems using web3 tech. Now, they lead a team of engineers tackling
           the biggest challenges in crypto.{" "}
@@ -88,7 +92,7 @@ export function Leadership() {
           <div className="flex gap-2">
             <Badge>Developer</Badge>
             <Badge variant="secondary">VC Backed Founder</Badge>
-            <Badge variant="outline">Team Builder</Badge>
+            <Badge variant="outline">Economic Design</Badge>
           </div>
           <div className="space-y-4">
             <p className="font-bold">
@@ -506,6 +510,204 @@ export function Leadership() {
                 <p className="text-sm">
                   A live-coding tutorial walking engineers through how to develop games using Waku
                   protocol, a decentralized messaging and data streaming protocol.
+                </p>
+              </div>
+            </a>
+          </motion.div>
+        </motion.div>
+      </motion.div>
+
+      {/* Leader Profile Section */}
+      <motion.div
+        variants={itemVariants}
+        id="daniel"
+        className="mt-16 flex flex-col items-center lg:flex-row lg:items-start lg:gap-24"
+      >
+        <motion.div variants={itemVariants} className="relative mb-8 size-[230px] shrink-0 lg:mb-0">
+          <Image
+            src="/images/daniel-glow.png"
+            alt="Pranav Singhal Recursive"
+            fill
+            className="rounded-2xl object-cover"
+          />
+        </motion.div>
+        <motion.div variants={itemVariants} className="flex flex-col gap-6">
+          <h2 className="text-left text-2xl font-bold sm:text-3xl">Daniel Zarzecki, Partner</h2>
+          <div className="flex gap-2">
+            <Badge>Web3 Founder</Badge>
+            <Badge variant="secondary">Software Engineer</Badge>
+            <Badge variant="outline">Economics Design</Badge>
+          </div>
+          <div className="space-y-4 text-muted-foreground">
+            <p className="font-bold">
+              Daniel manages Recursive&apos;s app engineering team and protocol economics design.
+            </p>
+            <p className="text-muted-foreground">
+              Daniel is a blockchain engineer and economics designer who has led teams working on
+              full-stack apps, infra, and developer tools, documentation for organizations like XRPL
+              Foundation, Helius various defi protocols and others.
+            </p>
+            <p className="text-muted-foreground">
+              Previously he founded a web3 smart contract security startup Workpod Audits focused on
+              freelance auditing competitions, aiming to build a community of auditors and
+              incentivize them to audit smart contracts. This solution drastically lowered the cost
+              for new startups and provided them with faster go-to-market.
+            </p>
+            <p className="text-muted-foreground">
+              Having built multiple engineering teams for web3 startups from the ground up, Daniel
+              focuses on leading rapid deployment app development projects - leveraging his
+              go-to-market experience to build products that are optimized for attention and
+              engagement. This experience shaped his approach to not just delivering code, but
+              creating sustainable solutions that scale.
+            </p>
+            <p className="text-muted-foreground">
+              Before entering web3, Daniel worked for 4 years in the gamedev industry as a developer
+              and game designer for various studios. That led him to discovering blockchain through
+              building Play-To-Earn games.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-4">
+            <Button variant="default" asChild>
+              <a href="https://x.com/NevvDevv" target="_blank" rel="noopener noreferrer">
+                <svg
+                  className="mr-2 size-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                </svg>
+                Follow on X
+              </a>
+            </Button>
+            <Button variant="outline" asChild>
+              <a
+                href="https://github.com/JustAnotherDevv"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  className="mr-2 size-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                </svg>
+                Github
+              </a>
+            </Button>
+            <Button variant="outline" asChild>
+              <a href="https://t.me/Someone_Nevv" target="_blank" rel="noopener noreferrer">
+                Contact Daniel
+              </a>
+            </Button>
+          </div>
+        </motion.div>
+      </motion.div>
+
+      {/* Speaking Engagements Section */}
+      <motion.div variants={itemVariants} className="mt-16">
+        <motion.h3 variants={itemVariants} className="mb-8 text-2xl font-bold">
+          Featured Content
+        </motion.h3>
+        <motion.div
+          variants={containerVariants}
+          className="grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+        >
+          {/* European Commission Card */}
+          <motion.div
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
+            <a
+              href="https://github.com/NevvDevvLabs/Dot-Starter-Kit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/polkadot.png"
+                  alt="Daniel Zarzecki Polkadot Boilerplate"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Polkadot Boilerplate | Open-Source App Starter Codebase
+                </h4>
+                <p className="text-sm text-muted-foreground">2025</p>
+                <p className="text-sm">
+                  Daniel developed a generalized boilerplate for building Dapps on Polkadot. It now
+                  serves as one of the main starter codebases in the Polkadot ecosystem.
+                </p>
+              </div>
+            </a>
+          </motion.div>
+
+          {/* SpaghettETH Card */}
+          <motion.div
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
+            <a
+              href="https://github.com/NevvDevvLabs/rescue-name-contracts"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/ens.png"
+                  alt="Daniel Zarzecki ENS"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Automated Solver for ENS Name Renewal
+                </h4>
+                <p className="text-sm text-muted-foreground">2024</p>
+                <p className="text-sm">
+                  Daniel developed a vault-based system of auto-renewing ENS names alongside ENS
+                  Foundation.
+                </p>
+              </div>
+            </a>
+          </motion.div>
+          {/* ETH Lisbon Card */}
+          <motion.div
+            variants={itemVariants}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.2 }}
+          >
+            <a
+              href="https://docs.helium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex h-full flex-col rounded-lg border bg-card"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/images/leadership/helium.png"
+                  alt="Daniel Zarzecki Helium Documentation"
+                  fill
+                  className="rounded-t-lg object-cover"
+                />
+              </div>
+              <div className="flex flex-1 flex-col p-6">
+                <h4 className="mb-2 font-heading text-xl font-semibold">
+                  Helium Developer Documentation | Leading DePin Project
+                </h4>
+                <p className="text-sm text-muted-foreground">2024</p>
+                <p className="text-sm">
+                  Daniel wrote and migrated the initial Helium Developer Documentation, now used by
+                  100s of developers.
                 </p>
               </div>
             </a>
