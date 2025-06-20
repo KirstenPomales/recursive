@@ -545,7 +545,7 @@ export function Leadership() {
             <p className="text-muted-foreground">
               Daniel is a blockchain engineer and economics designer who has led teams working on
               full-stack apps, infra, and developer tools, documentation for organizations like XRPL
-              Foundation, Helius various defi protocols and others.
+              Foundation, Helium, and various defi protocols.
             </p>
             <p className="text-muted-foreground">
               Previously he founded a web3 smart contract security startup Workpod Audits focused on
