@@ -142,7 +142,7 @@ export function Projects() {
                 <p className="font-semibold">Anshul Gupta</p>
                 <p className="text-muted-foreground">Bloom Impex</p>
                 <p className="text-sm">
-                  &apos;Their mobile first ERP system has brought our business into the 21st
+                  &apos;Their mobile first ERP network has brought our business into the 21st
                   century. He closely worked with us to understand our operations to give us a
                   tailored solution that fits perfectly into our existing workflows.&apos;
                 </p>

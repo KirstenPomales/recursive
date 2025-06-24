@@ -22,7 +22,7 @@ export function Hero2() {
           </span>
           for&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
-            crypto native funds
+            crypto-native funds
           </span>
         </motion.h1>
         <motion.p

@@ -45,7 +45,7 @@ export function Features() {
           </span>
           across&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
-            EVM and SVM
+            EVM, SVM, and ZK
           </span>
         </h2>
       </motion.div>
@@ -70,11 +70,12 @@ export function Features() {
                 />
               </div>
               <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
-                On-Chain AI Agents
+                AI Agents & Agentic Infra
               </h3>
               <p className="text-sm text-muted-foreground">
-                We build custom AI agents, powered by blockchain; from customer support agents to
-                advanced trading agents.
+                We build custom AI agents and tools, powered by blockchain; from customer support
+                agents to advanced trading agents. Leverage the best agentic frameworks from N18 to
+                Eliza for business and consumer apps.
               </p>
 
               <Button className="mr-auto cursor-pointer">
@@ -99,7 +100,8 @@ export function Features() {
               </h3>
               <p className="text-sm text-muted-foreground">
                 We design and build full-stack DAPPs and apps, powered by the most modern frameworks
-                and AI models.
+                and AI models. Trying to take your product to market fast? We offer fast-track G2M
+                deals to meet your timelines.
               </p>
               <Button className="mr-auto cursor-pointer" variant="outline">
                 <Link href="https://cal.com/recursive" target="_blank">
@@ -121,21 +123,25 @@ export function Features() {
                 />
               </div>
               <h3 className="mt-7 text-2xl font-semibold leading-none tracking-tight md:text-3xl">
-                Web 3 Venture Firms
+                Protocol Ecosystems
               </h3>
               <p className="text-sm text-muted-foreground">
-                We build tools that help crypto VC firms manage their portfolios and understand
-                token unlocks in real-time.
+                We work as an embedded dev team for L1, L2, and infra teams; helping them build the
+                tools needed for builder adoption - from protocols and starter kits to full-scale
+                ecosystem applications.
               </p>
               <Button className="mr-auto cursor-pointer">
-                <Link href="/tooling">Explore Venture Tools</Link>
+                <Link href="/tooling">How We Help Protocol Teams</Link>
               </Button>
             </CardContent>
           </Card>
         </motion.div>
       </motion.div>
 
-      <motion.div variants={itemVariants} className="mt-16 flex flex-col items-center gap-6">
+      {/* <motion.div
+        variants={itemVariants}
+        className="mt-16 hidden flex-col items-center gap-6 lg:flex"
+      >
         <span className="text-center font-bold uppercase text-muted">Technologies we love</span>
         <div className="grid grid-cols-4 items-center md:grid-cols-7 md:gap-8">
           {[
@@ -155,7 +161,7 @@ export function Features() {
             </div>
           ))}
         </div>
-      </motion.div>
+      </motion.div> */}
     </motion.section>
   );
 }

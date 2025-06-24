@@ -52,7 +52,7 @@ export function Leadership() {
           </span>
           experience building&nbsp;
           <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline">
-            crypto native products
+            crypto-native products
           </span>
         </motion.h1>
         <motion.p variants={itemVariants} className="text-lg text-muted-foreground lg:text-left">

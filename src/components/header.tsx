@@ -35,6 +35,7 @@ export function Header() {
       <Logo className="max-w-48 sm:max-w-xs" />
       <div className="flex items-center gap-10">
         <nav className="hidden items-center justify-end gap-10 lg:flex">
+          <NavItem href="/" label="Home" />
           <NavItem href="/leadership" label="About Us" />
           <div className="dropdown-container relative">
             <button
@@ -70,14 +71,14 @@ export function Header() {
                     href="/tooling"
                     className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
                   >
-                    Venture Portfolio Management
+                    Venture Tools
                   </Link>
-                  {/* <Link
-                    href="/mvp-development"
+                  <Link
+                    href="/embedded-engineering"
                     className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
                   >
-                    MVP Development
-                  </Link> */}
+                    Embedded Engineering
+                  </Link>
                 </div>
               </div>
             )}

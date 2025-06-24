@@ -72,7 +72,7 @@ export function AboutTeam() {
             variants={itemVariants}
             className="bg-gradient-to-br from-accent to-primary bg-clip-text text-primary underline"
           >
-            crypto native products
+            crypto-native products
           </motion.span>
         </motion.h1>
 
