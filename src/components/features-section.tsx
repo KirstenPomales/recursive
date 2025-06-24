@@ -131,7 +131,7 @@ export function Features() {
                 ecosystem applications.
               </p>
               <Button className="mr-auto cursor-pointer">
-                <Link href="/tooling">How We Help Protocol Teams</Link>
+                <Link href="/embedded-engineering">Scale Your Protocol</Link>
               </Button>
             </CardContent>
           </Card>
