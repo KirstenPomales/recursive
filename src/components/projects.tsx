@@ -46,7 +46,9 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Ibi-Cash</h2>
+            <h2 className="font-heading text-2xl font-semibold">
+              Ibi-Cash: SVM RWA Prediction Market Protocol
+            </h2>
             <p className="text-muted-foreground">
               A reforestation RWA and boding curve protocol built on SVM and EVM. Built for one of
               Brazil&apos;s biggest crypto investment funds, Atomic.
@@ -90,7 +92,9 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Dragonfly Capital</h2>
+            <h2 className="font-heading text-2xl font-semibold">
+              Dragonfly Capital: On-Chain Portfolio Management
+            </h2>
             <p className="text-muted-foreground">
               We built Dragonfly&apos;s internal portfolio management system, which tracks
               automatically on-chain events relating to TGEs, lock-ups, and more.
@@ -127,7 +131,9 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Ethers Query</h2>
+            <h2 className="font-heading text-2xl font-semibold">
+              Ethers Query: React Library for Ethers JS
+            </h2>
             <p className="text-muted-foreground">
               Development of the official React library for Ethers JS. Ethers JS is one of the most
               popular frontend frameworks in Ethereum.
@@ -154,7 +160,7 @@ export function Projects() {
         >
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">
-              Stealth Collateralized Debt Protocol
+              Stealth: SVM Collateralized Debt Protocol
             </h2>
             <p className="text-muted-foreground">
               A lending protocol on Solana that allows users to borrow against collateral as part of
@@ -181,7 +187,7 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">ai16z Eliza Zerion Plugin</h2>
+            <h2 className="font-heading text-2xl font-semibold">ai16z Eliza: Zerion Plugin</h2>
             <p className="text-muted-foreground">
               A plugin that allows Eliza agents to access real-time wallet and token data across 14
               blockchains.
@@ -217,7 +223,7 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Brahma</h2>
+            <h2 className="font-heading text-2xl font-semibold">Brahma: Commodities ERP</h2>
             <p className="text-muted-foreground">
               A cloud based ERP for one of the largest pulse trading and manufacturing firms in
               India. Millions of dollars of commerce passes through the system daily.
@@ -255,7 +261,9 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Liquidus: Governance Design</h2>
+            <h2 className="font-heading text-2xl font-semibold">
+              Liquidus: Governance Design for Banking Blockchain
+            </h2>
             <p className="text-muted-foreground">
               Consulted the Liquidus team and their consortium of banks on a holistic blockchain
               governance design process over the course of 6 months. Liquidus was the official
@@ -283,7 +291,7 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Mr. Fox</h2>
+            <h2 className="font-heading text-2xl font-semibold">Mr. Fox: AI Crypto Trading</h2>
             <p className="text-muted-foreground">
               An intent based chatbot that can execute transactions in a non-custodial way.
             </p>
@@ -304,11 +312,36 @@ export function Projects() {
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Revyou Telegram Mini App</h2>
+            <h2 className="font-heading text-2xl font-semibold">Crown: Delivery App</h2>
+            <p className="text-muted-foreground">
+              The first online pharmaceutical weed delivery platform in California, partnering with
+              dispensaries to delivery weed on-demand.
+            </p>
+            <div className="flex gap-2">
+              <Badge>E-commerce</Badge>
+              <Badge variant="secondary">Delivery Platform</Badge>
+            </div>
+          </div>
+          <div className="relative h-[200px] w-full md:w-[300px]">
+            <Image
+              src="/images/projects/crown.png"
+              alt="crown weed delivery platform by recursive studio"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
+          variants={item}
+        >
+          <div className="flex-1 space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">Revyou: Telegram Mini App</h2>
             <p className="text-muted-foreground">
               A Telegram Mini App that allows workers to get discovered by hirers and earn points
               for filling out their profile and completing bounties.
@@ -334,7 +367,9 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">TalentLayer</h2>
+            <h2 className="font-heading text-2xl font-semibold">
+              TalentLayer: EVM Marketplace Protocol
+            </h2>
             <p className="text-muted-foreground">
               A decentralized and censorship resistant infrastructure for building service
               marketplaces; ride-share apps, freelance platforms, and more. A comprehensive SDK and
@@ -363,7 +398,9 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
-            <h2 className="font-heading text-2xl font-semibold">Freelance Search</h2>
+            <h2 className="font-heading text-2xl font-semibold">
+              Freelance Search: ChatGPT Plugin
+            </h2>
             <p className="text-muted-foreground">
               An AI agent that reads real-time web data from the world&apos;s top freelance
               marketplaces, and allows users to run detailed search over 1 million jobs. The #1
