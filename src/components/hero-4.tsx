@@ -29,7 +29,7 @@ export function Hero4() {
             </motion.h1>
             <div className="mb-5 flex max-w-xs flex-wrap">
               <Image
-                src="/images/they-all-glow.png"
+                src="/images/they-glow.png"
                 alt="Image"
                 width={500}
                 height={500}

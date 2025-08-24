@@ -36,13 +36,13 @@ export function Header() {
       <div className="flex items-center gap-10">
         <nav className="hidden items-center justify-end gap-10 lg:flex">
           <NavItem href="/" label="Home" />
-          <NavItem href="/leadership" label="About Us" />
+          <NavItem href="/leadership" label="About" />
           <div className="dropdown-container relative">
             <button
               className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
-              Our Specialties
+              Specialties
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -83,7 +83,7 @@ export function Header() {
               </div>
             )}
           </div>
-          <NavItem href="/projects" label="Prior Projects" />
+          <NavItem href="/projects" label="Projects" />
 
           <NavItem href="/blog" label="Blog" />
           <NavItem href="/leadership#joinus" label="Join our Guild" />
@@ -99,11 +99,11 @@ export function Header() {
       <MobileNavbar>
         <div className="container rounded-b-lg bg-background py-4 text-foreground shadow-xl">
           <nav className="flex flex-col gap-1 pt-2">
-            <MobileNavItem href="/leadership" label="About Us" />
+            <MobileNavItem href="/leadership" label="About" />
 
             <MobileNavItem href="/ai-agent-developer" label="AI Agents" />
             <MobileNavItem href="/tooling" label="Venture Tools" />
-            <MobileNavItem href="/projects" label="Prior Projects" />
+            <MobileNavItem href="/projects" label="Recent Projects" />
             <MobileNavItem href="/blog" label="Blog" />
             <MobileNavItem href="/leadership#joinus" label="Join our Guild" />
 

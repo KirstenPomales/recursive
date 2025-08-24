@@ -9,9 +9,6 @@ export function Footer() {
           alt="icon"
           className="mx-1 inline-block size-4 align-text-bottom"
         />{" "}
-        <a href="https://talentlayer.org" className="underline" target="_blank">
-          TalentLayer Guild
-        </a>{" "}
       </p>
     </footer>
   );

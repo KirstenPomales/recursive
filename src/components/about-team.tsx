@@ -47,7 +47,7 @@ export function AboutTeam() {
         <motion.div variants={itemVariants} className="mb-5 flex max-w-xs flex-wrap">
           <motion.div variants={itemVariants}>
             <Image
-              src="/images/they-all-glow.png"
+              src="/images/they-glow.png"
               alt="Image"
               width={500}
               height={500}
@@ -79,15 +79,11 @@ export function AboutTeam() {
         <motion.p variants={itemVariants} className="text-lg text-muted-foreground lg:text-left">
           Recursive Studios was founded by
           <a href="/leadership#pranav" className="text-primary">
-            &nbsp;Pranav
+            &nbsp;Pranav&nbsp;
           </a>
-          ,
+          and
           <a href="/leadership#kirsten" className="text-primary">
-            &nbsp; Kirsten
-          </a>
-          , and{" "}
-          <a href="/leadership#daniel" className="text-primary">
-            &nbsp;Daniel&nbsp;
+            &nbsp; Kirsten&nbsp;
           </a>
           to solve real-world problems using web3 tech. Now, they lead a team of developers building
           powerful open-source software and helping startups scale engineering.{" "}

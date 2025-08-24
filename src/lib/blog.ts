@@ -41,7 +41,6 @@ export function getAllPosts() {
       ...data,
     } as BlogPost;
   });
-  
 
   return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1));
 }

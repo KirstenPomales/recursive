@@ -90,6 +90,97 @@ export function Projects() {
           variants={item}
         >
           <div className="flex-1 space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">Dragonfly Capital</h2>
+            <p className="text-muted-foreground">
+              We built Dragonfly&apos;s internal portfolio management system, which tracks
+              automatically on-chain events relating to TGEs, lock-ups, and more.
+            </p>
+            <div className="flex gap-2">
+              <Badge>ERP Development</Badge>
+              <Badge variant="secondary">On-Chain Alerts</Badge>
+              <Badge variant="outline">Venture</Badge>
+            </div>
+            <div className="mt-10 flex items-center">
+              <img src="/images/april.png" alt="Reviewer" className="size-10 rounded-full" />
+              <div className="ml-3">
+                <p className="font-semibold">April</p>
+                <p className="text-muted-foreground">Finance Manager, Dragonfly Capital</p>
+                <p className="text-sm italic">
+                  &quot;Without hesitation, we would recommend this team to our friends with similar
+                  needs.&quot;
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="relative h-[200px] w-full md:w-[300px]">
+            <Image
+              src="/images/projects/dragonfly-1.png"
+              alt="dragonfly capital project by recursive studio"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          variants={item}
+        >
+          <div className="flex-1 space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">Ethers Query</h2>
+            <p className="text-muted-foreground">
+              Development of the official React library for Ethers JS. Ethers JS is one of the most
+              popular frontend frameworks in Ethereum.
+            </p>
+            <div className="flex gap-2">
+              <Badge>Ethereum</Badge>
+              <Badge variant="secondary">Frontend Libraries</Badge>
+              <Badge variant="outline">Developer Tools</Badge>
+            </div>
+          </div>
+          <div className="relative h-[200px] w-full md:w-[300px]">
+            <Image
+              src="/images/projects/ethers-js.png"
+              alt="ethers js project by recursive studio"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
+          variants={item}
+        >
+          <div className="flex-1 space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">
+              Stealth Collateralized Debt Protocol
+            </h2>
+            <p className="text-muted-foreground">
+              A lending protocol on Solana that allows users to borrow against collateral as part of
+              a broader ecosystem of connected protocols.
+            </p>
+            <div className="flex gap-2">
+              <Badge>Solana</Badge>
+              <Badge variant="secondary">Defi</Badge>
+              <Badge variant="outline">Lending</Badge>
+            </div>
+          </div>
+          <div className="relative h-[200px] w-full md:w-[300px]">
+            <Image
+              src="/images/projects/stealth.png"
+              alt="stealth project by recursive studio"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          variants={item}
+        >
+          <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">ai16z Eliza Zerion Plugin</h2>
             <p className="text-muted-foreground">
               A plugin that allows Eliza agents to access real-time wallet and token data across 14
@@ -122,7 +213,7 @@ export function Projects() {
         </motion.div>
 
         <motion.div
-          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row-reverse"
           variants={item}
         >
           <div className="flex-1 space-y-4">
@@ -153,6 +244,34 @@ export function Projects() {
             <Image
               src="/images/projects/brahma.jpeg"
               alt="commodities ERP by Recursive Studio"
+              fill
+              className="rounded-lg object-cover"
+            />
+          </div>
+        </motion.div>
+
+        <motion.div
+          className="flex flex-col items-center gap-8 rounded-lg border bg-card p-6 md:flex-row"
+          variants={item}
+        >
+          <div className="flex-1 space-y-4">
+            <h2 className="font-heading text-2xl font-semibold">Liquidus: Governance Design</h2>
+            <p className="text-muted-foreground">
+              Consulted the Liquidus team and their consortium of banks on a holistic blockchain
+              governance design process over the course of 6 months. Liquidus was the official
+              blockchain partner for the Eastern Caribbean Central Bank, building KYC and regulatory
+              unification systems for the Caribbean region.
+            </p>
+            <div className="flex gap-2">
+              <Badge>Governance</Badge>
+              <Badge variant="secondary">Consulting</Badge>
+              <Badge variant="outline">Consortium Design</Badge>
+            </div>
+          </div>
+          <div className="relative h-[200px] w-full md:w-[300px]">
+            <Image
+              src="/images/projects/liquidus.png"
+              alt="liquidus governance design by recursive studio"
               fill
               className="rounded-lg object-cover"
             />
@@ -225,7 +344,7 @@ export function Projects() {
               <Badge>Protocol Network</Badge>
               <Badge variant="secondary">Marketplace</Badge>
 
-              <Badge variant="outline">SDK</Badge>
+              <Badge variant="outline">EVM</Badge>
               <Badge>API</Badge>
             </div>
           </div>
@@ -246,9 +365,9 @@ export function Projects() {
           <div className="flex-1 space-y-4">
             <h2 className="font-heading text-2xl font-semibold">Freelance Search</h2>
             <p className="text-muted-foreground">
-              An AI agent that reads real-time web data from the world’s top freelance marketplaces,
-              and allows users to run detailed search over 1 million jobs. An API that opens up
-              access to this data to 3rd party apps.
+              An AI agent that reads real-time web data from the world&apos;s top freelance
+              marketplaces, and allows users to run detailed search over 1 million jobs. The #1
+              ChatGPT app for hiring, Spring 2024
             </p>
             <div className="flex gap-2">
               <Badge>AI Agents</Badge>
