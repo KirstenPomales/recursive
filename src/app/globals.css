@@ -4,44 +4,65 @@
 
 @layer base {
   :root {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    --background: 60 20% 98%; /* Creamy white */
+    --foreground: 0 0% 0%; /* Black */
 
-    --card: 0 0% 10.2%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 0 0% 10.2%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 169 100% 32.35%;
+    --primary: 262 80% 50%; /* Vibrant Purple */
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 321 95.08% 52.16%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 50 100% 50%; /* Yellow */
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 0 0% 30.2%;
-    --muted-foreground: 0 0% 70.2%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
 
     --accent: 320 100% 50%;
     --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 100% 65.1%;
+    --destructive: 0 100% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 30.2%;
-    --input: 0 0% 20%;
-    --ring: 0 0% 100%;
+    --border: 0 0% 0%; /* Solid Black borders */
+    --input: 0 0% 100%;
+    --ring: 0 0% 0%;
 
-    --sidebar-background: 0 0% 10.2%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 5 100% 69.02%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 5 100% 69.02%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 30.2%;
-    --sidebar-ring: 0 0% 100%;
+    --radius: 0px; /* No border radius for brutalist look */
+  }
 
-    --radius: 0.75rem;
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 262 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 50 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 320 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 83%;
   }
 }
 

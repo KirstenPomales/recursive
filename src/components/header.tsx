@@ -27,10 +27,10 @@ export function Header() {
 
   return (
     <motion.header
-      animate={{ opacity: 1 }}
-      initial={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className="container mt-5 flex items-center justify-between gap-10 py-4 md:mt-4"
+      animate={{ y: 0, opacity: 1 }}
+      initial={{ y: -50, opacity: 0 }}
+      transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+      className="container mt-5 flex items-center justify-between gap-10 py-4 md:mt-4 border-b-2 border-black bg-background pb-6"
     >
       <Logo className="max-w-48 sm:max-w-xs" />
       <div className="flex items-center gap-10">
@@ -39,7 +39,7 @@ export function Header() {
           <NavItem href="/leadership" label="About" />
           <div className="dropdown-container relative">
             <button
-              className="flex items-center gap-1 text-muted-foreground transition-colors hover:text-foreground"
+              className="flex items-center gap-1 font-bold text-black hover:text-primary transition-colors"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Specialties
@@ -50,37 +50,41 @@ export function Header() {
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
+                strokeWidth="3"
+                strokeLinecap="square"
+                strokeLinejoin="miter"
                 className={`transition-transform ${isDropdownOpen ? "rotate-180" : ""}`}
               >
                 <path d="m6 9 6 6 6-6" />
               </svg>
             </button>
             {isDropdownOpen && (
-              <div className="absolute left-0 top-full mt-2 w-48 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5">
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="absolute left-0 top-full mt-2 w-48 border-2 border-black bg-background shadow-neo"
+              >
                 <div className="py-1">
                   <Link
                     href="/ai-agent-developer"
-                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                    className="block px-4 py-2 text-sm font-bold text-black hover:bg-primary hover:text-white transition-colors"
                   >
                     AI Agents
                   </Link>
                   <Link
                     href="/tooling"
-                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                    className="block px-4 py-2 text-sm font-bold text-black hover:bg-primary hover:text-white transition-colors"
                   >
                     Venture Tools
                   </Link>
                   <Link
                     href="/embedded-engineering"
-                    className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-foreground"
+                    className="block px-4 py-2 text-sm font-bold text-black hover:bg-primary hover:text-white transition-colors"
                   >
                     Embedded Engineering
                   </Link>
                 </div>
-              </div>
+              </motion.div>
             )}
           </div>
           <NavItem href="/projects" label="Projects" />
@@ -97,7 +101,7 @@ export function Header() {
         </div>
       </div>
       <MobileNavbar>
-        <div className="container rounded-b-lg bg-background py-4 text-foreground shadow-xl">
+        <div className="container border-t-2 border-black bg-background py-4 text-foreground shadow-none">
           <nav className="flex flex-col gap-1 pt-2">
             <MobileNavItem href="/leadership" label="About" />
 

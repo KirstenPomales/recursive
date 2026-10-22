@@ -28,10 +28,9 @@ export function AnimatedHeading({ title, subtitle }: AnimatedHeadingProps) {
     >
       <motion.h2
         variants={itemVariants}
-        className="text-balance text-center font-heading text-3xl font-bold tracking-tight md:text-5xl"
+        className="text-balance text-center font-heading text-3xl font-black tracking-tight md:text-5xl uppercase"
       >
-        {title}
-        <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary"></span>
+        <span className="bg-secondary text-black px-3 py-1 border-2 border-black shadow-neo">{title}</span>
       </motion.h2>
       <motion.p
         variants={itemVariants}

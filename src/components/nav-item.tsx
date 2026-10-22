@@ -12,7 +12,7 @@ export function NavItem({ href, label, className }: NavItemProps) {
     <Link
       href={href}
       className={cn(
-        "flex cursor-pointer items-center font-medium text-muted-foreground transition-colors hover:text-foreground text-sm",
+        "flex cursor-pointer items-center font-bold text-black transition-colors hover:bg-primary hover:text-white px-2 py-1 border-2 border-transparent hover:border-black hover:shadow-neo text-sm",
         className,
       )}
     >

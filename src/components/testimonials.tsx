@@ -52,24 +52,24 @@ export function Testimonials() {
       viewport={{ once: true, margin: "-100px" }}
       className="container flex flex-col items-center gap-6 py-24 sm:gap-7"
     >
-      <motion.div variants={itemVariants} className="flex flex-col gap-3">
-        <motion.span variants={itemVariants} className="text-center font-bold uppercase text-muted">
+      <motion.div variants={itemVariants} className="flex flex-col gap-3 items-center">
+        <motion.span variants={itemVariants} className="text-center font-bold uppercase text-black border-2 border-black px-2 py-1 bg-secondary shadow-neo">
           Testimonials
         </motion.span>
         <motion.h2
           variants={itemVariants}
-          className="text-balance font-heading text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl"
+          className="text-balance font-heading text-3xl font-black tracking-tight sm:text-4xl md:text-5xl text-black mt-4 text-center"
         >
           building for
-          <span className="bg-gradient-to-br from-accent to-primary bg-clip-text text-secondary">
-            &nbsp;the best
+          <span className="bg-primary text-white px-2 mx-2 -rotate-2 inline-block">
+            the best
           </span>
         </motion.h2>
       </motion.div>
 
       <motion.p
         variants={itemVariants}
-        className="max-w-lg text-balance text-center text-lg text-muted-foreground"
+        className="max-w-lg text-balance text-center text-lg font-bold text-black/70"
       >
         We&apos;ve collaborated with dozens of teams building future-proof technology.
       </motion.p>
@@ -80,14 +80,14 @@ export function Testimonials() {
           {logos.map((logo, index) => (
             <motion.div
               key={index}
-              className="group relative"
-              whileHover={{ scale: 1.1 }}
+              className="group relative border-2 border-transparent hover:border-black p-2 transition-all"
+              whileHover={{ scale: 1.1, rotate: -2 }}
               transition={{ duration: 0.2 }}
             >
               <img
                 src={logo}
                 alt="Partner logo"
-                className="h-3 w-auto opacity-50 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 sm:h-4"
+                className="h-6 w-auto opacity-80 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 sm:h-8"
               />
             </motion.div>
           ))}
@@ -96,7 +96,7 @@ export function Testimonials() {
 
       <motion.div variants={itemVariants} className="w-full">
         <Carousel opts={{ align: "start", loop: true }} className="mt-6 w-full px-4 xl:px-0">
-          <CarouselPrevious className="-left-6 size-7 sm:hidden xl:-left-12 xl:size-8" />
+          <CarouselPrevious className="-left-6 size-10 sm:hidden xl:-left-12 xl:size-12" />
           <CarouselContent className="pb-4">
             <CarouselTestimonialCard
               name="Piero Gancia"
@@ -124,7 +124,7 @@ export function Testimonials() {
               text="They closely worked with us to understand our operations to give us a tailored solution that fits perfectly into our existing workflows. Responsive and top-tier team."
             />
           </CarouselContent>
-          <CarouselNext className="-right-4 top-1/2 size-8 border-border/50 bg-background/80 backdrop-blur-sm hover:bg-background/90 xl:-right-8" />
+          <CarouselNext className="-right-4 top-1/2 size-10 border-black bg-white hover:bg-muted xl:-right-8 xl:size-12" />
         </Carousel>
       </motion.div>
     </motion.section>

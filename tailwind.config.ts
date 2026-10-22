@@ -20,6 +20,11 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        neo: "4px 4px 0 0 rgba(0,0,0,1)",
+        "neo-lg": "8px 8px 0 0 rgba(0,0,0,1)",
+        "neo-xl": "12px 12px 0 0 rgba(0,0,0,1)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

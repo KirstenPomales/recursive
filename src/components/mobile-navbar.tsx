@@ -24,12 +24,15 @@ export function MobileNavbar({ children }: { children: ReactNode }) {
 
   return (
     <>
-      <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? <X /> : <Menu />}
+      <button 
+        className="md:hidden p-2 border-2 border-black shadow-neo bg-background active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all" 
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
       </button>
       {isOpen && (
         <div
-          className="fixed inset-0 top-[50px] z-40 size-full overflow-auto bg-black/40 animate-in slide-in-from-bottom-24 md:hidden"
+          className="fixed inset-0 top-[70px] z-40 size-full overflow-auto bg-black/20 backdrop-blur-sm animate-in slide-in-from-bottom-24 md:hidden"
           onClick={() => setIsOpen(false)}
         >
           {children}

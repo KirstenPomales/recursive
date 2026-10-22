@@ -27,7 +27,7 @@ export function CarouselTestimonialCard({
   return (
     <CarouselItem className={cn("md:basis-1/2 lg:basis-1/2", className)}>
       <div className="h-full p-1">
-        <Card className="h-full border border-border bg-black shadow-md">
+        <Card className="h-full border-2 border-black bg-white shadow-neo hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all">
           <CardContent className="flex flex-col items-start gap-2 p-7 pt-4">
             <div className="relative -mt-1 h-24 w-48">
               {logoImage && (
@@ -35,21 +35,21 @@ export function CarouselTestimonialCard({
               )}
             </div>
             <div className="flex items-center gap-4">
-              <div className="relative size-10">
-                <Image src={image} alt="Picture" fill className="rounded-full object-cover" />
+              <div className="relative size-10 border-2 border-black">
+                <Image src={image} alt="Picture" fill className="object-cover" />
               </div>
               <div>
-                <p className="font-semibold leading-none text-white">{name}</p>
-                <p className="mt-2 leading-none text-primary">{username}</p>
+                <p className="font-black leading-none text-black uppercase">{name}</p>
+                <p className="mt-2 leading-none text-primary font-bold">{username}</p>
               </div>
             </div>
             {projectContext && (
               <div className="my-4 flex items-center gap-1.5">
-                <CheckCircle2 className="size-4 text-primary/60" />
-                <p className="italic text-primary/60">{projectContext}</p>
+                <CheckCircle2 className="size-4 text-black" />
+                <p className="font-medium text-black/80 bg-secondary px-1">{projectContext}</p>
               </div>
             )}
-            <p className="text-gray-300">&quot;{text}&quot;</p>
+            <p className="text-black font-medium">&quot;{text}&quot;</p>
           </CardContent>
         </Card>
       </div>
