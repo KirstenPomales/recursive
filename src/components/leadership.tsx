@@ -4,8 +4,19 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 export function Leadership() {
+  // On direct visits to /leadership#name, scroll once the content has rendered
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (!id) return;
+    const timer = setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 800);
+    return () => clearTimeout(timer);
+  }, []);
+
   // Add container variants for staggered children
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -73,7 +84,7 @@ export function Leadership() {
       <motion.div
         variants={itemVariants}
         id="kirsten"
-        className="mt-24 flex flex-col items-center lg:flex-row lg:items-start lg:gap-10"
+        className="mt-24 flex scroll-mt-24 flex-col items-center lg:flex-row lg:items-start lg:gap-10"
       >
         <motion.div variants={itemVariants} className="relative mb-8 size-[300px] shrink-0 lg:mb-0">
           <Image
@@ -84,7 +95,11 @@ export function Leadership() {
           />
         </motion.div>
         <motion.div variants={itemVariants} className="flex flex-col gap-6">
-          <h2 className="text-left text-2xl font-bold sm:text-3xl">Kirsten Pomales, Partner</h2>
+          <h2 className="text-left text-2xl font-bold sm:text-3xl">
+            <a href="#kirsten" className="hover:underline">
+              Kirsten Pomales, Partner
+            </a>
+          </h2>
           <div className="flex gap-2">
             <Badge>Developer</Badge>
             <Badge variant="secondary">VC Backed Founder</Badge>
@@ -295,7 +310,7 @@ export function Leadership() {
       <motion.div
         variants={itemVariants}
         id="pranav"
-        className="mt-16 flex flex-col items-center lg:flex-row lg:items-start lg:gap-24"
+        className="mt-16 flex scroll-mt-24 flex-col items-center lg:flex-row lg:items-start lg:gap-24"
       >
         <motion.div variants={itemVariants} className="relative mb-8 size-[250px] shrink-0 lg:mb-0">
           <Image
@@ -306,7 +321,11 @@ export function Leadership() {
           />
         </motion.div>
         <motion.div variants={itemVariants} className="flex flex-col gap-6">
-          <h2 className="text-left text-2xl font-bold sm:text-3xl">Pranav Singhal, Partner</h2>
+          <h2 className="text-left text-2xl font-bold sm:text-3xl">
+            <a href="#pranav" className="hover:underline">
+              Pranav Singhal, Partner
+            </a>
+          </h2>
           <div className="flex gap-2">
             <Badge>Developer</Badge>
             <Badge variant="secondary">Educator</Badge>
@@ -321,8 +340,21 @@ export function Leadership() {
               Pranav has spent the past few years helping multiple web3 startups launch products,
               protocol infrastructures, and decentralized applications. His work in the web 3 space
               since 2018 includes building decentralized exchanges, trading bots and agents,
-              low-level infrastructure, and more. Pranav currently is an blockchian development
-              educator at DBlock Ed, a developer education network.
+              low-level infrastructure, and more. Pranav is also a blockchain development educator
+              at <span className="font-semibold text-foreground">DBlock Ed</span>, a developer
+              education network that received grant funding from{" "}
+              <span className="font-semibold text-foreground">ETHIndia</span>.
+            </p>
+            <p className="text-muted-foreground">
+              Most recently, Pranav worked as an{" "}
+              <span className="font-semibold text-foreground">AI Forward Deployed Engineer</span>,
+              leading <span className="font-semibold text-foreground">Palantir</span> deployments at
+              some of India&apos;s largest companies, including{" "}
+              <span className="font-semibold text-foreground">Flipkart</span>,{" "}
+              <span className="font-semibold text-foreground">Tata Consumer</span>, and{" "}
+              <span className="font-semibold text-foreground">Tata Motors</span>. His work there
+              spanned migrating supply chain platforms onto Palantir&apos;s ontology, multilingual
+              voice agents, and LLM pipelines that turn millions of sales calls into revenue.
             </p>
             <p className="text-muted-foreground">
               In addition to his work in web3,{" "}
@@ -334,15 +366,14 @@ export function Leadership() {
             </p>
             <p className="text-muted-foreground">
               Earlier in his career, Pranav was a senior engineer leading the Identity and Access
-              Management team at Postman, where he contributed to critical security infrastructure.
-              Alongside that, Pranav spent three years running a commodities trading firm in India,
-              managing millions of dollars in daily trading volume for grains and other raw
-              materials.
+              Management team at <span className="font-semibold text-foreground">Postman</span>,
+              where he contributed to critical security infrastructure. Alongside that, Pranav spent
+              three years running a commodities trading firm in India, managing millions of dollars
+              in daily trading volume for grains and other raw materials.
             </p>
             <p className="text-muted-foreground">
-              Beyond tech, while a student Pranav has contributed to award winning astrophysics
-              research, having been invited by NASA to exhibit his work. His broad experience and
-              interests give him a versatile approach to solving complex problems.
+              Beyond tech, while a student Pranav contributed to astrophysics research. His broad
+              experience and interests give him a versatile approach to solving complex problems.
             </p>
             <p className="text-muted-foreground">
               Pranav is passionate about building scalable platforms and leveraging decentralized
@@ -351,7 +382,7 @@ export function Leadership() {
           </div>
           <div className="flex flex-wrap gap-4">
             <Button variant="default" asChild>
-              <a href="https://x.com/_pranav_singhal" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/thepranav" target="_blank" rel="noopener noreferrer">
                 <svg
                   className="mr-2 size-4"
                   fill="currentColor"
